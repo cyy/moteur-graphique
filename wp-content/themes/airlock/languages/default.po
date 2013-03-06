@@ -1,0 +1,1284 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Airlock\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-12-19 11:08+0100\n"
+"PO-Revision-Date: 2012-01-18 20:33+0100\n"
+"Last-Translator: WS <swiderski@10g.pl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-Basepath: D:\\workspace\\AirLOCK\\themes\\airlock\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:13
+#, php-format
+msgid "<a href=\"%1$s\" title=\"Home Page\">Go to Home Page</a>"
+msgstr ""
+
+#: archive.php:27
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: archive.php:29
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: archive.php:31
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:33
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:35
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#: comments.php:41
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: comments.php:42
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: comments.php:66
+msgid "Name <span>(required)</span>"
+msgstr ""
+
+#: comments.php:69
+msgid "Email (will not be published) <span>(required)</span>"
+msgstr ""
+
+#: comments.php:72
+msgid "Website"
+msgstr ""
+
+#: comments.php:83
+msgid "Message <span>(required)</span>"
+msgstr ""
+
+#: comments.php:84
+msgid "<span class=\"mm\">Leave a comment</span>"
+msgstr ""
+
+#: comments.php:85
+#, php-format
+msgid "<span class=\"mm\">Leave a comment to %s</span>"
+msgstr ""
+
+#: comments.php:89
+msgid "Submit comment"
+msgstr ""
+
+#: comments.php:90
+msgid " / Cancel reply"
+msgstr ""
+
+#: front-page.php:129
+msgid "Featured"
+msgstr ""
+
+#: front-page.php:132
+msgid "All"
+msgstr ""
+
+#: header.php:23
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: header.php:95
+msgid "Follow us on "
+msgstr ""
+
+#: loop-attachment.php:17
+#: loop-attachment.php:19
+#, php-format
+msgid "Return to %s"
+msgstr ""
+
+#: loop-attachment.php:25
+#, php-format
+msgid "By %1$s"
+msgstr ""
+
+#: loop-attachment.php:34
+#, php-format
+msgid "Published %1$s"
+msgstr ""
+
+#: loop-attachment.php:43
+#, php-format
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: loop-attachment.php:46
+msgid "Link to full-size image"
+msgstr ""
+
+#: loop-attachment.php:53
+#: loop-page.php:31
+#: loop-single.php:23
+#: loop.php:40
+msgid "Edit"
+msgstr ""
+
+#: loop-single.php:20
+#: loop.php:39
+msgid "comment(s)"
+msgstr ""
+
+#: search.php:17
+#, php-format
+msgid "Search results - %1$d results found for '%2$s'"
+msgstr ""
+
+#: single-portfolio.php:30
+msgid "Website: "
+msgstr ""
+
+#: advance/apollo13.php:122
+msgid "Site Navigation"
+msgstr ""
+
+#: advance/apollo13.php:195
+msgid "Home Page sidebar"
+msgstr ""
+
+#: advance/apollo13.php:197
+msgid "Widgets from this sidebar will appear on Home Page"
+msgstr ""
+
+#: advance/apollo13.php:205
+msgid "Blog sidebar"
+msgstr ""
+
+#: advance/apollo13.php:207
+msgid "Widgets from this sidebar will appear on main blog page"
+msgstr ""
+
+#: advance/apollo13.php:215
+msgid "Blog post sidebar"
+msgstr ""
+
+#: advance/apollo13.php:217
+msgid "Widgets from this sidebar will appear on blog posts"
+msgstr ""
+
+#: advance/apollo13.php:225
+msgid "Portfolio sidebar"
+msgstr ""
+
+#: advance/apollo13.php:227
+msgid "Widgets from this sidebar will appear on every site of portfolio(not on main)"
+msgstr ""
+
+#: advance/apollo13.php:235
+msgid "Other pages sidebar"
+msgstr ""
+
+#: advance/apollo13.php:237
+msgid "Widgets from this sidebar will appear on every other site with sidebar"
+msgstr ""
+
+#: advance/apollo13.php:246
+msgid "Main settings"
+msgstr ""
+
+#: advance/apollo13.php:247
+msgid "Home Page Design"
+msgstr ""
+
+#: advance/apollo13.php:248
+msgid "Thumbs"
+msgstr ""
+
+#: advance/apollo13.php:249
+msgid "Colors"
+msgstr ""
+
+#: advance/apollo13.php:250
+msgid "Fonts"
+msgstr ""
+
+#: advance/apollo13.php:251
+msgid "Footer texts"
+msgstr ""
+
+#: advance/apollo13.php:252
+#: advance/options.php:205
+msgid "Portfolio"
+msgstr ""
+
+#: advance/apollo13.php:253
+msgid "Social"
+msgstr ""
+
+#: advance/apollo13.php:254
+msgid "Advance"
+msgstr ""
+
+#: advance/apollo13.php:259
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: advance/apollo13.php:276
+#, php-format
+msgid "Template updated. <a href=\"%s\">Visit your site</a> to see how it looks."
+msgstr ""
+
+#: advance/apollo13.php:401
+#: advance/apollo13.php:431
+msgid "Your Categories"
+msgstr ""
+
+#: advance/apollo13.php:739
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: advance/apollo13.php:740
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: advance/apollo13.php:741
+msgid "New Portfolio Item"
+msgstr ""
+
+#: advance/apollo13.php:742
+msgid "View Portfolio Item"
+msgstr ""
+
+#: advance/apollo13.php:743
+msgid "Search Portfolio"
+msgstr ""
+
+#: advance/apollo13.php:744
+msgid "Nothing found"
+msgstr ""
+
+#: advance/apollo13.php:745
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: advance/apollo13.php:815
+#, php-format
+msgid "<a href=\"%1$s\" rel=\"bookmark\" class=\"date\">%2$s</a>"
+msgstr ""
+
+#: advance/apollo13.php:824
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: advance/apollo13.php:826
+#, php-format
+msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: advance/apollo13.php:857
+#: advance/apollo13.php:859
+msgid "Type and enter ..."
+msgstr ""
+
+#: advance/apollo13.php:870
+msgid "Search"
+msgstr ""
+
+#: advance/apollo13.php:897
+#: advance/apollo13.php:941
+#: advance/apollo13.php:949
+msgid " Shortocdes"
+msgstr ""
+
+#: advance/apollo13.php:905
+msgid "Blog post Detail -  Add Image and videos"
+msgstr ""
+
+#: advance/apollo13.php:914
+msgid "Page Detail"
+msgstr ""
+
+#: advance/apollo13.php:923
+msgid "Portfolio details"
+msgstr ""
+
+#: advance/apollo13.php:932
+msgid "Portfolio details - Add Image and videos"
+msgstr ""
+
+#: advance/apollo13.php:961
+msgid "Select category"
+msgstr ""
+
+#: advance/apollo13.php:1184
+msgid "Allowed Files"
+msgstr ""
+
+#: advance/apollo13.php:1368
+#: advance/apollo13.php:1417
+msgid "General question ..."
+msgstr ""
+
+#: advance/apollo13.php:1394
+msgid " - message from contact form"
+msgstr ""
+
+#: advance/apollo13.php:1395
+msgid "Site: "
+msgstr ""
+
+#: advance/apollo13.php:1396
+msgid "Name: "
+msgstr ""
+
+#: advance/apollo13.php:1397
+msgid "Email: "
+msgstr ""
+
+#: advance/apollo13.php:1398
+msgid "Subject: "
+msgstr ""
+
+#: advance/apollo13.php:1399
+msgid "Message: "
+msgstr ""
+
+#: advance/apollo13.php:1405
+msgid "Success sending form"
+msgstr ""
+
+#: advance/apollo13.php:1408
+msgid "Something wrong. Try again!"
+msgstr ""
+
+#: advance/apollo13.php:1411
+msgid "Error in form"
+msgstr ""
+
+#: advance/apollo13.php:1438
+msgid "Email <span>(required)</span>"
+msgstr ""
+
+#: advance/apollo13.php:1442
+msgid "Subject <span>(required)</span>"
+msgstr ""
+
+#: advance/apollo13.php:1451
+msgid "Submit form"
+msgstr ""
+
+#: advance/apollo13.php:1514
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: advance/apollo13.php:1539
+msgid "(Edit)"
+msgstr ""
+
+#: advance/apollo13.php:1696
+msgid "Back to Portfolio"
+msgstr ""
+
+#: advance/apollo13.php:1700
+msgid "Back to Blog"
+msgstr ""
+
+#: advance/meta.php:14
+#: advance/meta.php:186
+msgid "Choose image or video"
+msgstr ""
+
+#: advance/meta.php:15
+#: advance/meta.php:187
+msgid "Choose between Image or Video"
+msgstr ""
+
+#: advance/meta.php:20
+#: advance/meta.php:192
+msgid "Image"
+msgstr ""
+
+#: advance/meta.php:21
+#: advance/meta.php:193
+msgid "Video"
+msgstr ""
+
+#: advance/meta.php:25
+#: advance/meta.php:197
+msgid "Upload image"
+msgstr ""
+
+#: advance/meta.php:32
+#: advance/meta.php:204
+msgid "Link to video"
+msgstr ""
+
+#: advance/meta.php:42
+#: advance/meta.php:256
+#: advance/options.php:198
+#: advance/options.php:256
+#: advance/options.php:299
+msgid "Move relative to the other"
+msgstr ""
+
+#: advance/meta.php:43
+#: advance/meta.php:257
+msgid "Clicking the button will move up or down relative to other images or videos"
+msgstr ""
+
+#: advance/meta.php:49
+#: advance/meta.php:263
+msgid "Add next image or video"
+msgstr ""
+
+#: advance/meta.php:67
+msgid "Top image"
+msgstr ""
+
+#: advance/meta.php:68
+msgid "<strong>Remember</strong> image will be 640px wide"
+msgstr ""
+
+#: advance/meta.php:74
+msgid "Page width"
+msgstr ""
+
+#: advance/meta.php:80
+msgid "640px"
+msgstr ""
+
+#: advance/meta.php:81
+msgid "Full width"
+msgstr ""
+
+#: advance/meta.php:97
+msgid "Select portfolio variant"
+msgstr ""
+
+#: advance/meta.php:98
+msgid "Choose between: Vertical position / Slider / Liquid"
+msgstr ""
+
+#: advance/meta.php:103
+msgid "Vertical position"
+msgstr ""
+
+#: advance/meta.php:104
+msgid "Slider"
+msgstr ""
+
+#: advance/meta.php:105
+msgid "Liquid"
+msgstr ""
+
+#: advance/meta.php:113
+msgid "Custom HomePage thumbnail"
+msgstr ""
+
+#: advance/meta.php:114
+msgid "<strong>Remember</strong>. Homepage thumbnail size: 220x"
+msgstr ""
+
+#: advance/meta.php:120
+msgid "Custom Sidebar thumbnail"
+msgstr ""
+
+#: advance/meta.php:121
+msgid "<strong>Remember</strong>. Sidebar thumbnail size: 200x"
+msgstr ""
+
+#: advance/meta.php:131
+msgid "Short description under title"
+msgstr ""
+
+#: advance/meta.php:132
+msgid "This text will show on the home page and in the portfolio list"
+msgstr ""
+
+#: advance/meta.php:138
+msgid "Link to the project in details"
+msgstr ""
+
+#: advance/meta.php:139
+msgid "URL. This address will show in detail"
+msgstr ""
+
+#: advance/meta.php:149
+msgid "Project featured?"
+msgstr ""
+
+#: advance/meta.php:155
+#: advance/meta.php:220
+#: advance/meta.php:241
+#: advance/options.php:505
+#: advance/options.php:645
+msgid "No"
+msgstr ""
+
+#: advance/meta.php:156
+#: advance/meta.php:221
+#: advance/meta.php:242
+#: advance/options.php:504
+#: advance/options.php:644
+msgid "Yes"
+msgstr ""
+
+#: advance/meta.php:172
+msgid "Multi upload"
+msgstr ""
+
+#: advance/meta.php:214
+msgid "Caption text"
+msgstr ""
+
+#: advance/meta.php:226
+msgid "This text appears in the details (bottom) of the selected project at the added photo or video"
+msgstr ""
+
+#: advance/meta.php:235
+msgid "Custom lightbox text"
+msgstr ""
+
+#: advance/meta.php:247
+msgid "if you leave the description blank, the lightbox will display the caption text"
+msgstr ""
+
+#: advance/options.php:6
+msgid "Layout width"
+msgstr ""
+
+#: advance/options.php:10
+#: advance/options.php:369
+msgid "Choose:"
+msgstr ""
+
+#: advance/options.php:15
+msgid "Wide(100%)"
+msgstr ""
+
+#: advance/options.php:16
+msgid "Narrow(960px)"
+msgstr ""
+
+#: advance/options.php:21
+msgid "Customize Logo"
+msgstr ""
+
+#: advance/options.php:25
+msgid "Custom logo image(light)"
+msgstr ""
+
+#: advance/options.php:26
+#: advance/options.php:33
+msgid "Enter an URL or upload an image for logo. Paste the full URL (include <code>http://</code>). Left empty to use default theme value."
+msgstr ""
+
+#: advance/options.php:32
+msgid "Custom logo image(dark)"
+msgstr ""
+
+#: advance/options.php:39
+msgid "Theme styles"
+msgstr ""
+
+#: advance/options.php:43
+msgid "Choose default style file to use:"
+msgstr ""
+
+#: advance/options.php:54
+msgid "Enable theme switcher:"
+msgstr ""
+
+#: advance/options.php:55
+msgid "If disabled: <strong>Auto evening/day detector</strong> will also be disabled"
+msgstr ""
+
+#: advance/options.php:65
+msgid "Auto evening/day detector"
+msgstr ""
+
+#: advance/options.php:66
+msgid "If enabled: depending on user local time theme will load in dark(evening) or light(day) version"
+msgstr ""
+
+#: advance/options.php:76
+msgid "Enable theme footer"
+msgstr ""
+
+#: advance/options.php:87
+msgid "Blog settings"
+msgstr ""
+
+#: advance/options.php:91
+msgid "Blog page title"
+msgstr ""
+
+#: advance/options.php:92
+msgid "Enter text you want to use (empty hides this)"
+msgstr ""
+
+#: advance/options.php:98
+#: advance/options.php:114
+#: advance/options.php:160
+#: advance/options.php:536
+msgid "Sidebar"
+msgstr ""
+
+#: advance/options.php:103
+#: advance/options.php:119
+#: advance/options.php:169
+#: advance/options.php:541
+msgid "Left"
+msgstr ""
+
+#: advance/options.php:104
+#: advance/options.php:120
+#: advance/options.php:170
+#: advance/options.php:542
+msgid "Right"
+msgstr ""
+
+#: advance/options.php:105
+#: advance/options.php:121
+#: advance/options.php:171
+#: advance/options.php:186
+#: advance/options.php:215
+#: advance/options.php:226
+#: advance/options.php:237
+#: advance/options.php:273
+#: advance/options.php:316
+#: advance/options.php:543
+msgid "Disable"
+msgstr ""
+
+#: advance/options.php:110
+msgid "Other pages"
+msgstr ""
+
+#: advance/options.php:126
+msgid "Contact form settings"
+msgstr ""
+
+#: advance/options.php:130
+msgid "E-mail address where e-mails will be sent:"
+msgstr ""
+
+#: advance/options.php:131
+msgid "If empty, will use admin site e-mail"
+msgstr ""
+
+#: advance/options.php:137
+msgid "Google Analytics"
+msgstr ""
+
+#: advance/options.php:141
+msgid "Enter code here from GA here:"
+msgstr ""
+
+#: advance/options.php:156
+msgid "Home Page - options and design"
+msgstr ""
+
+#: advance/options.php:164
+msgid "Switch sidebar"
+msgstr ""
+
+#: advance/options.php:176
+msgid "HelloText"
+msgstr ""
+
+#: advance/options.php:180
+msgid "Switch on/off HelloText section"
+msgstr ""
+
+#: advance/options.php:185
+#: advance/options.php:214
+#: advance/options.php:225
+#: advance/options.php:236
+#: advance/options.php:272
+#: advance/options.php:315
+msgid "Enable"
+msgstr ""
+
+#: advance/options.php:191
+msgid "Text"
+msgstr ""
+
+#: advance/options.php:192
+msgid "If you click enter the text moves to the next line"
+msgstr ""
+
+#: advance/options.php:199
+#: advance/options.php:257
+#: advance/options.php:300
+msgid "Clicking the button will move up or down relative to other modules"
+msgstr ""
+
+#: advance/options.php:209
+msgid "Switch on/off portfolio section"
+msgstr ""
+
+#: advance/options.php:220
+msgid "Show only images(no texts)"
+msgstr ""
+
+#: advance/options.php:231
+msgid "Pagination"
+msgstr ""
+
+#: advance/options.php:232
+msgid "If you only use portfolio on front page, enabling pagination may come handy."
+msgstr ""
+
+#: advance/options.php:242
+msgid "Portfolio items displayed"
+msgstr ""
+
+#: advance/options.php:243
+msgid "Set number of items displayed in front page. Set 0 to use global WP setting(10 as default). Set to -1 to display all. Keep in mind that items are ordered by date, so some categories may be empty if you set limit here."
+msgstr ""
+
+#: advance/options.php:249
+#: advance/options.php:285
+msgid "Category"
+msgstr ""
+
+#: advance/options.php:250
+msgid "Select from: All, Featured and other categories added"
+msgstr ""
+
+#: advance/options.php:263
+msgid "Blog posts"
+msgstr ""
+
+#: advance/options.php:267
+msgid "Switch on/off blog section"
+msgstr ""
+
+#: advance/options.php:278
+msgid "Title of blog section"
+msgstr ""
+
+#: advance/options.php:281
+msgid "Latest from Blog"
+msgstr ""
+
+#: advance/options.php:286
+msgid "Select category form which posts will be displayed"
+msgstr ""
+
+#: advance/options.php:292
+msgid "Number of posts:"
+msgstr ""
+
+#: advance/options.php:293
+msgid "Set to -1 to show all posts"
+msgstr ""
+
+#: advance/options.php:306
+msgid "Footer"
+msgstr ""
+
+#: advance/options.php:310
+msgid "Switch on/off footer section"
+msgstr ""
+
+#: advance/options.php:329
+msgid "Thumbs sizes"
+msgstr ""
+
+#: advance/options.php:333
+msgid "Height of portfolio thumbs"
+msgstr ""
+
+#: advance/options.php:334
+msgid "This will affect front-page, and Portfolio page thumbs"
+msgstr ""
+
+#: advance/options.php:340
+msgid "Height of sidebar thumbs"
+msgstr ""
+
+#: advance/options.php:341
+msgid "This will affect siedbar thumbs for posts and projects"
+msgstr ""
+
+#: advance/options.php:365
+msgid "Cufon settings"
+msgstr ""
+
+#: advance/options.php:374
+msgid "Cufon on"
+msgstr ""
+
+#: advance/options.php:375
+msgid "Cufon off"
+msgstr ""
+
+#: advance/options.php:380
+msgid "Choose font to use:"
+msgstr ""
+
+#: advance/options.php:396
+msgid "Customize &lt;body&gt; area"
+msgstr ""
+
+#: advance/options.php:400
+msgid "Custom background color"
+msgstr ""
+
+#: advance/options.php:401
+msgid "Use valid CSS <code>color</code> property values( <code>green, #33FF99, rgb(255,128,0)</code> ), or get your color with color picker tool. Left empty to use default theme value."
+msgstr ""
+
+#: advance/options.php:407
+msgid "Custom background image"
+msgstr ""
+
+#: advance/options.php:408
+msgid "Enter an URL or upload an image for background. Paste the full URL (include <code>http://</code>). Left empty to use default theme value."
+msgstr ""
+
+#: advance/options.php:414
+msgid "Background horizontal position"
+msgstr ""
+
+#: advance/options.php:415
+#: advance/options.php:428
+msgid "If you set one position setting, you will have to set other also to make this setting work. "
+msgstr ""
+
+#: advance/options.php:419
+#: advance/options.php:432
+#: advance/options.php:445
+msgid "default theme value"
+msgstr ""
+
+#: advance/options.php:420
+#: advance/options.php:433
+msgid "left"
+msgstr ""
+
+#: advance/options.php:421
+#: advance/options.php:434
+msgid "center"
+msgstr ""
+
+#: advance/options.php:422
+msgid "right"
+msgstr ""
+
+#: advance/options.php:427
+msgid "Background vertical position"
+msgstr ""
+
+#: advance/options.php:435
+msgid "bottom"
+msgstr ""
+
+#: advance/options.php:440
+msgid "Background Repeat"
+msgstr ""
+
+#: advance/options.php:446
+msgid "no repeat"
+msgstr ""
+
+#: advance/options.php:447
+msgid "repeat in both axes"
+msgstr ""
+
+#: advance/options.php:448
+msgid "repeat horizontal"
+msgstr ""
+
+#: advance/options.php:449
+msgid "repeat verical"
+msgstr ""
+
+#: advance/options.php:462
+msgid "Footer texts settings"
+msgstr ""
+
+#: advance/options.php:466
+msgid "Footer copyright text:"
+msgstr ""
+
+#: advance/options.php:473
+msgid "Footer most bottom-right text:"
+msgstr ""
+
+#: advance/options.php:488
+msgid "Portfolio settings"
+msgstr ""
+
+#: advance/options.php:492
+msgid "Portfolio slug name"
+msgstr ""
+
+#: advance/options.php:493
+msgid "Remember that if you use nice permalinks(eg. <code>yoursite.com/page-about-me</code>, <code>yoursite.com/portfolio/damn-empty/</code>) then <strong>NONE of your static pages</strong> should have same slug as this, or pagination will break and other problems may appear."
+msgstr ""
+
+#: advance/options.php:499
+msgid "Show featured category?"
+msgstr ""
+
+#: advance/options.php:510
+msgid "Select portfolio page"
+msgstr ""
+
+#: advance/options.php:511
+msgid "Choose the one you use for portfolio display"
+msgstr ""
+
+#: advance/options.php:517
+msgid "Icons on portfolio item"
+msgstr ""
+
+#: advance/options.php:518
+msgid "Automatic is default mode. <strong>View mode</strong> will show only view image/play video icon. <strong>Details mode</strong> will show only 'go to details' icon. If you use View mode, you have to be sure you provided good URL for each images/video."
+msgstr ""
+
+#: advance/options.php:522
+msgid "Automatic"
+msgstr ""
+
+#: advance/options.php:523
+msgid "View mode"
+msgstr ""
+
+#: advance/options.php:524
+msgid "Details mode"
+msgstr ""
+
+#: advance/options.php:529
+msgid "Portfolio items per page"
+msgstr ""
+
+#: advance/options.php:530
+msgid "Set number of items per page. This setting will be used on portfolio page. Items are ordered by date. Set 0 to use global WP setting(10 as default). Set to -1 to display all."
+msgstr ""
+
+#: advance/options.php:548
+msgid "Comments"
+msgstr ""
+
+#: advance/options.php:549
+msgid "You can change this individually for each portfolio item"
+msgstr ""
+
+#: advance/options.php:553
+msgid "On"
+msgstr ""
+
+#: advance/options.php:554
+msgid "Off"
+msgstr ""
+
+#: advance/options.php:559
+msgid "Disabled comments note"
+msgstr ""
+
+#: advance/options.php:560
+msgid "If comments for portfolio are disabled this note will be displayed. Left empty for no note."
+msgstr ""
+
+#: advance/options.php:604
+msgid "Social settings"
+msgstr ""
+
+#: advance/options.php:608
+msgid "Number of visible icons:"
+msgstr ""
+
+#: advance/options.php:615
+#: advance/options.php:619
+msgid "Social services"
+msgstr ""
+
+#: advance/options.php:620
+msgid "Use <code>http://</code> in your social links"
+msgstr ""
+
+#: advance/options.php:635
+msgid "Timthumb settings"
+msgstr ""
+
+#: advance/options.php:639
+msgid "Use relative paths"
+msgstr ""
+
+#: advance/options.php:640
+msgid "Don't change it if images in your blog loads normaly. Only if none image in blog is loading try to change this."
+msgstr ""
+
+#: advance/widgets.php:5
+msgid "The most recent posts on your site"
+msgstr ""
+
+#: advance/widgets.php:6
+#: advance/widgets.php:29
+msgid "Recent Posts"
+msgstr ""
+
+#: advance/widgets.php:96
+msgid "The most popular posts on your site"
+msgstr ""
+
+#: advance/widgets.php:97
+#: advance/widgets.php:120
+msgid "Popular Posts"
+msgstr ""
+
+#: advance/widgets.php:186
+msgid "Related posts to current post"
+msgstr ""
+
+#: advance/widgets.php:187
+#: advance/widgets.php:210
+msgid "Related Posts"
+msgstr ""
+
+#: advance/widgets.php:283
+msgid "The most recent comments"
+msgstr ""
+
+#: advance/widgets.php:284
+#: advance/widgets.php:310
+msgid "Recent Comments"
+msgstr ""
+
+#: advance/widgets.php:371
+msgid "Display twitter feeds"
+msgstr ""
+
+#: advance/widgets.php:372
+msgid "  Twitter"
+msgstr ""
+
+#: advance/widgets.php:377
+msgid "Twitter"
+msgstr ""
+
+#: advance/widgets.php:458
+msgid "Your most recent projects"
+msgstr ""
+
+#: advance/widgets.php:459
+#: advance/widgets.php:482
+msgid "Recent Projects"
+msgstr ""
+
+#: advance/widgets.php:551
+msgid "Related projects"
+msgstr ""
+
+#: advance/widgets.php:552
+#: advance/widgets.php:575
+msgid "Related Projects"
+msgstr ""
+
+#: advance/widgets.php:657
+msgid "Featured projects"
+msgstr ""
+
+#: advance/widgets.php:658
+#: advance/widgets.php:681
+msgid "Featured Projects"
+msgstr ""
+
+#: advance/plugins/flickrpress/flickr.php:279
+msgid "Flickr"
+msgstr ""
+
+#: advance/plugins/flickrpress/flickr.php:617
+msgid "Display entries from Flickr"
+msgstr ""
+
+#: advance/plugins/flickrpress/flickr.php:619
+msgid "Flickrpress"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:6
+msgid "Typography"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:9
+msgid "Heading"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:13
+msgid "Size"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:28
+msgid "Color"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:44
+msgid "Blockquote"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:48
+#: advance/shortcodes/shortcodes-generate.php:98
+msgid "Align"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:60
+#: advance/shortcodes/shortcodes-generate.php:85
+#: advance/shortcodes/shortcodes-generate.php:163
+msgid "Content"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:69
+msgid "List"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:73
+msgid "Style"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:94
+msgid "Image with lightbox"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:117
+msgid "url"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:124
+#: advance/shortcodes/shortcodes-generate.php:154
+msgid "Title"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:131
+msgid "Border"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:147
+#: advance/shortcodes/shortcodes-generate.php:150
+msgid "Tabs"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:172
+msgid "Add more fields"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:183
+msgid "Columns"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:186
+msgid "Column 50%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:190
+msgid "Left 50%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:199
+msgid "Right 50%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:208
+#: advance/shortcodes/shortcodes-generate.php:254
+#: advance/shortcodes/shortcodes-generate.php:309
+#: advance/shortcodes/shortcodes-generate.php:373
+msgid "Add clear"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:223
+msgid "Column 33%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:227
+msgid "Left 33%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:236
+msgid "Center 33%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:245
+msgid "Right 33%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:269
+msgid "Column 25%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:273
+msgid "Left 25%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:282
+#: advance/shortcodes/shortcodes-generate.php:291
+msgid "Center 25%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:300
+msgid "Right 25%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:324
+msgid "Column 20%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:328
+msgid "Left 20%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:337
+#: advance/shortcodes/shortcodes-generate.php:346
+#: advance/shortcodes/shortcodes-generate.php:355
+msgid "Center 20%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:364
+msgid "Right 20%"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:388
+msgid "Line"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:393
+msgid "Clear"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:408
+msgid "Type"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:419
+msgid "Movie id, or movie link"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:426
+msgid "Height"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:433
+msgid "Width"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:440
+msgid "Autoplay"
+msgstr ""
+
+#: advance/shortcodes/shortcodes-generate.php:483
+msgid "Upload Image"
+msgstr ""
+

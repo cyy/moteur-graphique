@@ -1,0 +1,90 @@
+
+/**
+ *      The airlock's extended css
+ *
+ *      $Id: ext.css
+ *      
+ *      $date: 2013-02-28
+ *      
+ *      @author cyy
+ */
+ 
+/*-----------------------------------------------------------------------------------*/
+/*	Like Style start
+/*-----------------------------------------------------------------------------------*/
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.entry-meta {
+    font-size: 11px;
+    margin: 0;
+   
+}
+
+.entry-div {
+	padding: 0 10px 10px;
+ }
+
+.clearfix {
+    display: block;
+}
+
+.like-count .icon, .comment-count .icon, .published .icon {
+    background-image: url("../gfx/sprite.png");
+}
+
+.published {
+    float: left;
+}
+
+.published .icon {
+    background-position: 0 0;
+    float: left;
+    height: 6px;
+    margin: 4px 5px 0 0;
+    width: 12px;
+}
+
+
+.like-count, .edit-post, .comment-count {
+    float: right;
+    margin: 0 0 0 10px;
+}
+
+.comment-meta a:hover,
+.entry-meta a:hover {
+	color: #66696d;
+}
+
+.comment-count .icon {
+    background-position: 0 -7px;
+    float: left;
+    height: 11px;
+    margin: 2px 5px 0 0;
+    width: 15px;
+}
+
+.comment-count a:hover .icon {
+	 background-position: -16px -7px;
+}
+
+.like-count .icon {
+    background-position: 0 -19px;
+    float: left;
+    height: 11px;
+    margin: 2px 5px 0 0;
+    width: 13px;
+}
+
+.like-count a:hover, .like-count a.active, .like-count a:hover {
+    color: #F56559;
+}
+
+.like-count a:hover .icon, .like-count a.active .icon {
+    background-position: -15px -19px;
+}
