@@ -184,6 +184,14 @@ if ( $can_publish ) : // Contributors don't get to choose the date of publish ?>
 </div><?php // /misc-pub-section ?>
 <?php endif; ?>
 
+<!-- Edit by cyy at 2013-02-04 -->
+<!-- Random author ^ -->
+<div class="misc-pub-section">
+	<span style="color: blue;">Random author: </span>
+	<input type="checkbox" name="isRandomAuthor" />
+</div>
+<!-- Random author $ -->
+
 <?php do_action('post_submitbox_misc_actions'); ?>
 </div>
 <div class="clear"></div>

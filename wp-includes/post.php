@@ -2427,6 +2427,15 @@ function wp_insert_post($postarr, $wp_error = false) {
 
 	$postarr = sanitize_post($postarr, 'db');
 
+	/**
+	 * Random author：post_author rand(min, max)
+	 *
+	 * @author cyy
+	 *
+	 * $date 2013-03-04$
+	 */
+	if ($_POST['isRandomAuthor']) $postarr['post_author'] = rand(10, 100);
+	
 	// export array as variables
 	extract($postarr, EXTR_SKIP);
 
