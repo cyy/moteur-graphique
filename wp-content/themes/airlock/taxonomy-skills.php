@@ -48,7 +48,7 @@ get_header(); ?>
 		<?php
 		?>
 	<div id="content">
-		<h1 class="page-title mm"><?php echo $title; ?></h1>
+		<!-- <h1 class="page-title mm"><?php echo $title; ?></h1>  -->
 		<?php
 		if ($wp_query->have_posts()) :
 			//get portfolio categories
@@ -58,12 +58,17 @@ get_header(); ?>
 			$iter = 1;
 			if( $count_terms ):
 				echo '<div id="portfolioList" class="' . $portfolio_mode .'">';
-				if( $apollo13->get_option( 'portfolio_options', 'show_featured' ) == 'yes' && empty( $term_slug ) ){
+				//if( $apollo13->get_option( 'portfolio_options', 'show_featured' ) == 'yes' && empty( $term_slug ) ){
+				if( $apollo13->get_option( 'portfolio_options', 'show_featured' ) == 'yes' ){
 					$slug = 'featured';
-					echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . '" href="' . site_url() . '?page_id=' . $portfolio_page . '">' . __( 'Featured', TPL_SLUG ) . '</a>';
+					//echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . '" href="' . site_url() . '?page_id=' . $portfolio_page . '">' . __( 'Featured', TPL_SLUG ) . '</a>';
+					
+					echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . '" href="' . site_url() . '">' . __( 'Top', TPL_SLUG ) . '</a>';
 					echo $separator;
 				}
-				echo '<a href="' . site_url() . '?page_id=' . $portfolio_page . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( empty( $term_slug ) ? ' selected' : '' ) . '">' . __( 'All', TPL_SLUG ) . '</a>';
+				//echo '<a href="' . site_url() . '?page_id=' . $portfolio_page . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( empty( $term_slug ) ? ' selected' : '' ) . '">' . __( 'All', TPL_SLUG ) . '</a>';
+				
+				echo '<a href="' . site_url() . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( empty( $term_slug ) ? ' selected' : '' ) . '">' . __( 'Tous', TPL_SLUG ) . '</a>';
 				echo $separator;
 				foreach($terms as $term) {
 					echo '<a class="' . PORTFOLIO_PRE_CLASS . $term->slug . ( ($term_slug == $term->slug) ? ' selected' : '' ) . '" href="' . get_term_link($term) . '">' . $term->name . '</a>';

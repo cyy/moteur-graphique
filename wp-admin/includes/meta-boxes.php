@@ -188,7 +188,7 @@ if ( $can_publish ) : // Contributors don't get to choose the date of publish ?>
 <!-- Random author ^ -->
 <div class="misc-pub-section">
 	<span style="color: blue;">Random author: </span>
-	<input type="checkbox" name="isRandomAuthor" />
+	<input type="checkbox" name="isRandomAuthor" <?php if ($post->post_author >= 10 && $post->post_author <= 100) { ?>checked="checked" <?php } ?>/>
 </div>
 <!-- Random author $ -->
 

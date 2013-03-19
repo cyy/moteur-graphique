@@ -413,7 +413,8 @@ h5{
 	position: relative;
 }
 .full-width #content{
-	margin-left: 0;
+	/**margin-left: 0;**/
+	margin: 0 auto;
 }
 .sidebar-right #content{
 	margin-left: 0;
@@ -809,7 +810,8 @@ div.anythingSlider-minimalist-round{
 	top: -15px;
 }
 .portfolio-elastic{
-	margin-left: -20px;
+	/**margin-left: -20px;**/
+	margin-left: 20px;
 }
 .portfolio-elastic div.post.not-found{
 	margin: 20px;
@@ -845,8 +847,9 @@ div.anythingSlider-minimalist-round{
 }
 #portfolioList{
 	margin-bottom: 33px;
-	margin-right: 100px;
+	/**margin-right: 100px;**/
 	font-size: 15px;
+	margin-left: 45px;
 }	
 #portfolioList a{
 	color: #999;

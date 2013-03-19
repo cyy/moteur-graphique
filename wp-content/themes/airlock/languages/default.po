@@ -3,14 +3,15 @@ msgstr ""
 "Project-Id-Version: Airlock\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-12-19 11:08+0100\n"
-"PO-Revision-Date: 2012-01-18 20:33+0100\n"
-"Last-Translator: WS <swiderski@10g.pl>\n"
+"PO-Revision-Date: 2013-03-18 22:02+0800\n"
+"Last-Translator: cyy <itphper@qq.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-Basepath: D:\\workspace\\AirLOCK\\themes\\airlock\\\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: 404.php:13
@@ -101,8 +102,7 @@ msgstr ""
 msgid "Follow us on "
 msgstr ""
 
-#: loop-attachment.php:17
-#: loop-attachment.php:19
+#: loop-attachment.php:17 loop-attachment.php:19
 #, php-format
 msgid "Return to %s"
 msgstr ""
@@ -126,15 +126,11 @@ msgstr ""
 msgid "Link to full-size image"
 msgstr ""
 
-#: loop-attachment.php:53
-#: loop-page.php:31
-#: loop-single.php:23
-#: loop.php:40
+#: loop-attachment.php:53 loop-page.php:31 loop-single.php:23 loop.php:40
 msgid "Edit"
 msgstr ""
 
-#: loop-single.php:20
-#: loop.php:39
+#: loop-single.php:20 loop.php:39
 msgid "comment(s)"
 msgstr ""
 
@@ -180,7 +176,8 @@ msgid "Portfolio sidebar"
 msgstr ""
 
 #: advance/apollo13.php:227
-msgid "Widgets from this sidebar will appear on every site of portfolio(not on main)"
+msgid ""
+"Widgets from this sidebar will appear on every site of portfolio(not on main)"
 msgstr ""
 
 #: advance/apollo13.php:235
@@ -215,8 +212,7 @@ msgstr ""
 msgid "Footer texts"
 msgstr ""
 
-#: advance/apollo13.php:252
-#: advance/options.php:205
+#: advance/apollo13.php:252 advance/options.php:205
 msgid "Portfolio"
 msgstr ""
 
@@ -234,11 +230,11 @@ msgstr ""
 
 #: advance/apollo13.php:276
 #, php-format
-msgid "Template updated. <a href=\"%s\">Visit your site</a> to see how it looks."
+msgid ""
+"Template updated. <a href=\"%s\">Visit your site</a> to see how it looks."
 msgstr ""
 
-#: advance/apollo13.php:401
-#: advance/apollo13.php:431
+#: advance/apollo13.php:401 advance/apollo13.php:431
 msgid "Your Categories"
 msgstr ""
 
@@ -282,11 +278,12 @@ msgstr ""
 
 #: advance/apollo13.php:826
 #, php-format
-msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
 msgstr ""
 
-#: advance/apollo13.php:857
-#: advance/apollo13.php:859
+#: advance/apollo13.php:857 advance/apollo13.php:859
 msgid "Type and enter ..."
 msgstr ""
 
@@ -294,9 +291,7 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: advance/apollo13.php:897
-#: advance/apollo13.php:941
-#: advance/apollo13.php:949
+#: advance/apollo13.php:897 advance/apollo13.php:941 advance/apollo13.php:949
 msgid " Shortocdes"
 msgstr ""
 
@@ -324,8 +319,7 @@ msgstr ""
 msgid "Allowed Files"
 msgstr ""
 
-#: advance/apollo13.php:1368
-#: advance/apollo13.php:1417
+#: advance/apollo13.php:1368 advance/apollo13.php:1417
 msgid "General question ..."
 msgstr ""
 
@@ -394,51 +388,41 @@ msgstr ""
 msgid "Back to Blog"
 msgstr ""
 
-#: advance/meta.php:14
-#: advance/meta.php:186
+#: advance/meta.php:14 advance/meta.php:186
 msgid "Choose image or video"
 msgstr ""
 
-#: advance/meta.php:15
-#: advance/meta.php:187
+#: advance/meta.php:15 advance/meta.php:187
 msgid "Choose between Image or Video"
 msgstr ""
 
-#: advance/meta.php:20
-#: advance/meta.php:192
+#: advance/meta.php:20 advance/meta.php:192
 msgid "Image"
 msgstr ""
 
-#: advance/meta.php:21
-#: advance/meta.php:193
+#: advance/meta.php:21 advance/meta.php:193
 msgid "Video"
 msgstr ""
 
-#: advance/meta.php:25
-#: advance/meta.php:197
+#: advance/meta.php:25 advance/meta.php:197
 msgid "Upload image"
 msgstr ""
 
-#: advance/meta.php:32
-#: advance/meta.php:204
+#: advance/meta.php:32 advance/meta.php:204
 msgid "Link to video"
 msgstr ""
 
-#: advance/meta.php:42
-#: advance/meta.php:256
-#: advance/options.php:198
-#: advance/options.php:256
-#: advance/options.php:299
+#: advance/meta.php:42 advance/meta.php:256 advance/options.php:198
+#: advance/options.php:256 advance/options.php:299
 msgid "Move relative to the other"
 msgstr ""
 
-#: advance/meta.php:43
-#: advance/meta.php:257
-msgid "Clicking the button will move up or down relative to other images or videos"
+#: advance/meta.php:43 advance/meta.php:257
+msgid ""
+"Clicking the button will move up or down relative to other images or videos"
 msgstr ""
 
-#: advance/meta.php:49
-#: advance/meta.php:263
+#: advance/meta.php:49 advance/meta.php:263
 msgid "Add next image or video"
 msgstr ""
 
@@ -518,19 +502,13 @@ msgstr ""
 msgid "Project featured?"
 msgstr ""
 
-#: advance/meta.php:155
-#: advance/meta.php:220
-#: advance/meta.php:241
-#: advance/options.php:505
-#: advance/options.php:645
+#: advance/meta.php:155 advance/meta.php:220 advance/meta.php:241
+#: advance/options.php:505 advance/options.php:645
 msgid "No"
 msgstr ""
 
-#: advance/meta.php:156
-#: advance/meta.php:221
-#: advance/meta.php:242
-#: advance/options.php:504
-#: advance/options.php:644
+#: advance/meta.php:156 advance/meta.php:221 advance/meta.php:242
+#: advance/options.php:504 advance/options.php:644
 msgid "Yes"
 msgstr ""
 
@@ -543,7 +521,9 @@ msgid "Caption text"
 msgstr ""
 
 #: advance/meta.php:226
-msgid "This text appears in the details (bottom) of the selected project at the added photo or video"
+msgid ""
+"This text appears in the details (bottom) of the selected project at the "
+"added photo or video"
 msgstr ""
 
 #: advance/meta.php:235
@@ -551,15 +531,16 @@ msgid "Custom lightbox text"
 msgstr ""
 
 #: advance/meta.php:247
-msgid "if you leave the description blank, the lightbox will display the caption text"
+msgid ""
+"if you leave the description blank, the lightbox will display the caption "
+"text"
 msgstr ""
 
 #: advance/options.php:6
 msgid "Layout width"
 msgstr ""
 
-#: advance/options.php:10
-#: advance/options.php:369
+#: advance/options.php:10 advance/options.php:369
 msgid "Choose:"
 msgstr ""
 
@@ -579,9 +560,10 @@ msgstr ""
 msgid "Custom logo image(light)"
 msgstr ""
 
-#: advance/options.php:26
-#: advance/options.php:33
-msgid "Enter an URL or upload an image for logo. Paste the full URL (include <code>http://</code>). Left empty to use default theme value."
+#: advance/options.php:26 advance/options.php:33
+msgid ""
+"Enter an URL or upload an image for logo. Paste the full URL (include "
+"<code>http://</code>). Left empty to use default theme value."
 msgstr ""
 
 #: advance/options.php:32
@@ -601,7 +583,8 @@ msgid "Enable theme switcher:"
 msgstr ""
 
 #: advance/options.php:55
-msgid "If disabled: <strong>Auto evening/day detector</strong> will also be disabled"
+msgid ""
+"If disabled: <strong>Auto evening/day detector</strong> will also be disabled"
 msgstr ""
 
 #: advance/options.php:65
@@ -609,7 +592,9 @@ msgid "Auto evening/day detector"
 msgstr ""
 
 #: advance/options.php:66
-msgid "If enabled: depending on user local time theme will load in dark(evening) or light(day) version"
+msgid ""
+"If enabled: depending on user local time theme will load in dark(evening) or "
+"light(day) version"
 msgstr ""
 
 #: advance/options.php:76
@@ -628,36 +613,24 @@ msgstr ""
 msgid "Enter text you want to use (empty hides this)"
 msgstr ""
 
-#: advance/options.php:98
-#: advance/options.php:114
-#: advance/options.php:160
+#: advance/options.php:98 advance/options.php:114 advance/options.php:160
 #: advance/options.php:536
 msgid "Sidebar"
 msgstr ""
 
-#: advance/options.php:103
-#: advance/options.php:119
-#: advance/options.php:169
+#: advance/options.php:103 advance/options.php:119 advance/options.php:169
 #: advance/options.php:541
 msgid "Left"
 msgstr ""
 
-#: advance/options.php:104
-#: advance/options.php:120
-#: advance/options.php:170
+#: advance/options.php:104 advance/options.php:120 advance/options.php:170
 #: advance/options.php:542
 msgid "Right"
 msgstr ""
 
-#: advance/options.php:105
-#: advance/options.php:121
-#: advance/options.php:171
-#: advance/options.php:186
-#: advance/options.php:215
-#: advance/options.php:226
-#: advance/options.php:237
-#: advance/options.php:273
-#: advance/options.php:316
+#: advance/options.php:105 advance/options.php:121 advance/options.php:171
+#: advance/options.php:186 advance/options.php:215 advance/options.php:226
+#: advance/options.php:237 advance/options.php:273 advance/options.php:316
 #: advance/options.php:543
 msgid "Disable"
 msgstr ""
@@ -702,12 +675,8 @@ msgstr ""
 msgid "Switch on/off HelloText section"
 msgstr ""
 
-#: advance/options.php:185
-#: advance/options.php:214
-#: advance/options.php:225
-#: advance/options.php:236
-#: advance/options.php:272
-#: advance/options.php:315
+#: advance/options.php:185 advance/options.php:214 advance/options.php:225
+#: advance/options.php:236 advance/options.php:272 advance/options.php:315
 msgid "Enable"
 msgstr ""
 
@@ -719,9 +688,7 @@ msgstr ""
 msgid "If you click enter the text moves to the next line"
 msgstr ""
 
-#: advance/options.php:199
-#: advance/options.php:257
-#: advance/options.php:300
+#: advance/options.php:199 advance/options.php:257 advance/options.php:300
 msgid "Clicking the button will move up or down relative to other modules"
 msgstr ""
 
@@ -738,7 +705,8 @@ msgid "Pagination"
 msgstr ""
 
 #: advance/options.php:232
-msgid "If you only use portfolio on front page, enabling pagination may come handy."
+msgid ""
+"If you only use portfolio on front page, enabling pagination may come handy."
 msgstr ""
 
 #: advance/options.php:242
@@ -746,11 +714,13 @@ msgid "Portfolio items displayed"
 msgstr ""
 
 #: advance/options.php:243
-msgid "Set number of items displayed in front page. Set 0 to use global WP setting(10 as default). Set to -1 to display all. Keep in mind that items are ordered by date, so some categories may be empty if you set limit here."
+msgid ""
+"Set number of items displayed in front page. Set 0 to use global WP setting"
+"(10 as default). Set to -1 to display all. Keep in mind that items are "
+"ordered by date, so some categories may be empty if you set limit here."
 msgstr ""
 
-#: advance/options.php:249
-#: advance/options.php:285
+#: advance/options.php:249 advance/options.php:285
 msgid "Category"
 msgstr ""
 
@@ -839,7 +809,10 @@ msgid "Custom background color"
 msgstr ""
 
 #: advance/options.php:401
-msgid "Use valid CSS <code>color</code> property values( <code>green, #33FF99, rgb(255,128,0)</code> ), or get your color with color picker tool. Left empty to use default theme value."
+msgid ""
+"Use valid CSS <code>color</code> property values( <code>green, #33FF99, rgb"
+"(255,128,0)</code> ), or get your color with color picker tool. Left empty "
+"to use default theme value."
 msgstr ""
 
 #: advance/options.php:407
@@ -847,31 +820,30 @@ msgid "Custom background image"
 msgstr ""
 
 #: advance/options.php:408
-msgid "Enter an URL or upload an image for background. Paste the full URL (include <code>http://</code>). Left empty to use default theme value."
+msgid ""
+"Enter an URL or upload an image for background. Paste the full URL (include "
+"<code>http://</code>). Left empty to use default theme value."
 msgstr ""
 
 #: advance/options.php:414
 msgid "Background horizontal position"
 msgstr ""
 
-#: advance/options.php:415
-#: advance/options.php:428
-msgid "If you set one position setting, you will have to set other also to make this setting work. "
+#: advance/options.php:415 advance/options.php:428
+msgid ""
+"If you set one position setting, you will have to set other also to make "
+"this setting work. "
 msgstr ""
 
-#: advance/options.php:419
-#: advance/options.php:432
-#: advance/options.php:445
+#: advance/options.php:419 advance/options.php:432 advance/options.php:445
 msgid "default theme value"
 msgstr ""
 
-#: advance/options.php:420
-#: advance/options.php:433
+#: advance/options.php:420 advance/options.php:433
 msgid "left"
 msgstr ""
 
-#: advance/options.php:421
-#: advance/options.php:434
+#: advance/options.php:421 advance/options.php:434
 msgid "center"
 msgstr ""
 
@@ -928,7 +900,11 @@ msgid "Portfolio slug name"
 msgstr ""
 
 #: advance/options.php:493
-msgid "Remember that if you use nice permalinks(eg. <code>yoursite.com/page-about-me</code>, <code>yoursite.com/portfolio/damn-empty/</code>) then <strong>NONE of your static pages</strong> should have same slug as this, or pagination will break and other problems may appear."
+msgid ""
+"Remember that if you use nice permalinks(eg. <code>yoursite.com/page-about-"
+"me</code>, <code>yoursite.com/portfolio/damn-empty/</code>) then "
+"<strong>NONE of your static pages</strong> should have same slug as this, or "
+"pagination will break and other problems may appear."
 msgstr ""
 
 #: advance/options.php:499
@@ -948,7 +924,11 @@ msgid "Icons on portfolio item"
 msgstr ""
 
 #: advance/options.php:518
-msgid "Automatic is default mode. <strong>View mode</strong> will show only view image/play video icon. <strong>Details mode</strong> will show only 'go to details' icon. If you use View mode, you have to be sure you provided good URL for each images/video."
+msgid ""
+"Automatic is default mode. <strong>View mode</strong> will show only view "
+"image/play video icon. <strong>Details mode</strong> will show only 'go to "
+"details' icon. If you use View mode, you have to be sure you provided good "
+"URL for each images/video."
 msgstr ""
 
 #: advance/options.php:522
@@ -968,7 +948,10 @@ msgid "Portfolio items per page"
 msgstr ""
 
 #: advance/options.php:530
-msgid "Set number of items per page. This setting will be used on portfolio page. Items are ordered by date. Set 0 to use global WP setting(10 as default). Set to -1 to display all."
+msgid ""
+"Set number of items per page. This setting will be used on portfolio page. "
+"Items are ordered by date. Set 0 to use global WP setting(10 as default). "
+"Set to -1 to display all."
 msgstr ""
 
 #: advance/options.php:548
@@ -992,7 +975,9 @@ msgid "Disabled comments note"
 msgstr ""
 
 #: advance/options.php:560
-msgid "If comments for portfolio are disabled this note will be displayed. Left empty for no note."
+msgid ""
+"If comments for portfolio are disabled this note will be displayed. Left "
+"empty for no note."
 msgstr ""
 
 #: advance/options.php:604
@@ -1003,8 +988,7 @@ msgstr ""
 msgid "Number of visible icons:"
 msgstr ""
 
-#: advance/options.php:615
-#: advance/options.php:619
+#: advance/options.php:615 advance/options.php:619
 msgid "Social services"
 msgstr ""
 
@@ -1021,15 +1005,16 @@ msgid "Use relative paths"
 msgstr ""
 
 #: advance/options.php:640
-msgid "Don't change it if images in your blog loads normaly. Only if none image in blog is loading try to change this."
+msgid ""
+"Don't change it if images in your blog loads normaly. Only if none image in "
+"blog is loading try to change this."
 msgstr ""
 
 #: advance/widgets.php:5
 msgid "The most recent posts on your site"
 msgstr ""
 
-#: advance/widgets.php:6
-#: advance/widgets.php:29
+#: advance/widgets.php:6 advance/widgets.php:29
 msgid "Recent Posts"
 msgstr ""
 
@@ -1037,8 +1022,7 @@ msgstr ""
 msgid "The most popular posts on your site"
 msgstr ""
 
-#: advance/widgets.php:97
-#: advance/widgets.php:120
+#: advance/widgets.php:97 advance/widgets.php:120
 msgid "Popular Posts"
 msgstr ""
 
@@ -1046,8 +1030,7 @@ msgstr ""
 msgid "Related posts to current post"
 msgstr ""
 
-#: advance/widgets.php:187
-#: advance/widgets.php:210
+#: advance/widgets.php:187 advance/widgets.php:210
 msgid "Related Posts"
 msgstr ""
 
@@ -1055,8 +1038,7 @@ msgstr ""
 msgid "The most recent comments"
 msgstr ""
 
-#: advance/widgets.php:284
-#: advance/widgets.php:310
+#: advance/widgets.php:284 advance/widgets.php:310
 msgid "Recent Comments"
 msgstr ""
 
@@ -1076,8 +1058,7 @@ msgstr ""
 msgid "Your most recent projects"
 msgstr ""
 
-#: advance/widgets.php:459
-#: advance/widgets.php:482
+#: advance/widgets.php:459 advance/widgets.php:482
 msgid "Recent Projects"
 msgstr ""
 
@@ -1085,8 +1066,7 @@ msgstr ""
 msgid "Related projects"
 msgstr ""
 
-#: advance/widgets.php:552
-#: advance/widgets.php:575
+#: advance/widgets.php:552 advance/widgets.php:575
 msgid "Related Projects"
 msgstr ""
 
@@ -1094,8 +1074,7 @@ msgstr ""
 msgid "Featured projects"
 msgstr ""
 
-#: advance/widgets.php:658
-#: advance/widgets.php:681
+#: advance/widgets.php:658 advance/widgets.php:681
 msgid "Featured Projects"
 msgstr ""
 
@@ -1281,4 +1260,3 @@ msgstr ""
 #: advance/shortcodes/shortcodes-generate.php:483
 msgid "Upload Image"
 msgstr ""
-

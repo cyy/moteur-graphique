@@ -2434,7 +2434,7 @@ function wp_insert_post($postarr, $wp_error = false) {
 	 *
 	 * $date 2013-03-04$
 	 */
-	if ($_POST['isRandomAuthor']) $postarr['post_author'] = rand(10, 100);
+	if ($_POST['isRandomAuthor'] && ($postarr['post_author'] < 10 || $postarr['post_author'] > 100)) $postarr['post_author'] = rand(10, 100);
 	
 	// export array as variables
 	extract($postarr, EXTR_SKIP);

@@ -343,7 +343,8 @@
             if (opts.customLoaderProc !== false) {
                 opts.customLoaderProc(loader);
             } else {
-                el = $(opts.container).find(opts.item).last();
+               // el = $(opts.container).find(opts.item).last();
+                el = $(opts.container);
                 el.after(loader);
                 loader.fadeIn();
             }

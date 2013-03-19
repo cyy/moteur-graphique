@@ -88,3 +88,29 @@
 .like-count a:hover .icon, .like-count a.active .icon {
     background-position: -15px -19px;
 }
+
+.fr {
+	float : right;
+}
+
+/*
+Back to top button 
+*/
+a#go-top{
+	background: url(../gfx/light/to-top.png) 20px 20px no-repeat;
+	width:60px;
+	height:45px;
+	text-align:center;
+	text-decoration:none;
+	line-height:25px;
+	color:#999;
+}
+a#go-top:hover{
+	background: url(../gfx/dark/to-top.png) 20px 20px no-repeat;
+	width:60px;
+	height:45px;
+	text-align:center;
+	text-decoration:none;
+	line-height:25px;
+	color:#2C63A9;
+}

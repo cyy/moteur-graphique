@@ -40,7 +40,7 @@ get_header(); ?>
 		
 		<div class="posts-elastic elastic">
 
-			<?php
+			<?php 
 			/* Since we called the_post() above, we need to
 			 * rewind the loop back to the beginning that way
 			 * we can run the loop properly, in full.
@@ -51,7 +51,7 @@ get_header(); ?>
 			 * If you want to overload this in a child theme then include a file
 			 * called loop-single.php and that will be used instead.
 			 */
-			get_template_part( 'loop' );
+			get_template_part( 'loop', 'portfolio' );
 			?>
 		</div>
 		<?php $apollo13->blog_nav(); ?>

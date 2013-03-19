@@ -47,7 +47,7 @@ var social_skins = {
 		<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', TPL_SLUG ); ?>"><?php _e( 'Skip to content', 'twentyten' ); ?></a></div>
 	</div><!-- #access -->
 
-	<?php
+	<?php 
 		global $apollo13;
 		$layout_width = $apollo13->get_option( 'settings', 'layout_width' );
 	?>

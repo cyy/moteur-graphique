@@ -9,7 +9,9 @@
  *
  */
 global $apollo13;
-
+//<script type="text/javascript" src="img/jquery.isotope.min.js"></script>
+wp_enqueue_script('jquery.isotope', TPL_JS . '/jquery.isotope.js', array( 'jquery' ) );
+wp_enqueue_script('go-top', TPL_JS . '/go-top.js', array( 'jquery' ) );
 wp_enqueue_script('ext', TPL_JS . '/ext.js', array( 'jquery' ) );
 
 ?>
@@ -86,6 +88,7 @@ wp_enqueue_script('ext', TPL_JS . '/ext.js', array( 'jquery' ) );
 				</div>
 				<div class="post-categories">
 					<?php $apollo13->portfolio_posted_in( $term_list ); ?>
+					<span class="url fn n fr" ><?php echo get_the_author()?></span>
 				</div>
 			</div>
 	<!--BEGIN .entry-meta .entry-header-->
@@ -95,7 +98,8 @@ wp_enqueue_script('ext', TPL_JS . '/ext.js', array( 'jquery' ) );
     <li class="published">
         <a href="<?php the_permalink(); ?>" title="<?php _e('Permalink to:', 'framework');?> <?php the_title(); ?>">
             <span class="icon"></span>
-            <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) .' '. __('ago', 'framework'); ?>
+            <?php //echo human_time_diff(get_the_time('U'), current_time('timestamp')) .' '. __('ago', 'framework'); ?>
+            <?php echo 'Il ya'.' '.human_time_diff(get_the_time('U'), current_time('timestamp')); ?>
         </a>
     </li>
              
@@ -114,9 +118,6 @@ wp_enqueue_script('ext', TPL_JS . '/ext.js', array( 'jquery' ) );
         <?php tz_printLikes(get_the_ID()); ?>
     </li>
     <?php endif; ?>
-             
-    <?php //edit_post_link( __('[Edit]', 'framework'), '<li class="edit-post">', '</li>' ); ?>
-             
     <!--END .entry-meta entry-header -->
     </ul>
     </div>

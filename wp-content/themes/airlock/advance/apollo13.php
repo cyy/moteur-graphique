@@ -1410,7 +1410,8 @@ class Apollo13 {
 		$title_msg      = '';
 		$name_tag       = 'value=""';
 		$email_tag      = 'value=""';
-		$subject_tag    = 'value="' . __( 'General question ...', TPL_SLUG ) . '" title="' . __( 'General question ...', TPL_SLUG ) . '"';
+		//$subject_tag    = 'value="' . __( 'General question ...', TPL_SLUG ) . '" title="' . __( 'General question ...', TPL_SLUG ) . '"';
+		$subject_tag    = 'value="' . __( 'Question générale ...', TPL_SLUG ) . '" title="' . __( 'Question générale ...', TPL_SLUG ) . '"';
 		$content_tag    = '';
 		
 		if( isset( $_POST['apollo13-contact-form'] ) ){
@@ -1476,24 +1477,24 @@ class Apollo13 {
 			$html .= (empty( $title_msg ) ? '' : '<h4 class="mm">' . $title_msg . '</h4>' );
 		$html .= '		<ul>
 							<li' . ($name_error ? ' class="error"' : '') . '>
-								<label for="apollo13-contact-name">' . __( 'Name <span>(required)</span>', TPL_SLUG ) . '</label>
+								<label for="apollo13-contact-name">' . __( 'Nom/Prénom <span>(Obligatoire)</span>', TPL_SLUG ) . '</label>
 								<input id="apollo13-contact-name" name="apollo13-contact-name" type="text" ' . $name_tag . ' />
 							</li>
 							<li' . ($email_error ? ' class="error"' : '') . '>
-								<label for="apollo13-contact-email">' . __( 'Email <span>(required)</span>', TPL_SLUG ) . '</label>
+								<label for="apollo13-contact-email">' . __( 'Email <span>(Obligatoire)</span>', TPL_SLUG ) . '</label>
 								<input id="apollo13-contact-email" name="apollo13-contact-email" type="text" ' . $email_tag . ' class="email" />
 							</li>
 							<li' . ($subject_error ? ' class="error"' : '') . '>
-								<label for="apollo13-contact-subject">' . __( 'Subject <span>(required)</span>', TPL_SLUG ) . '</label>
+								<label for="apollo13-contact-subject">' . __( 'Sujet <span>(Obligatoire)</span>', TPL_SLUG ) . '</label>
 								<input class="placeholder" id="apollo13-contact-subject" name="apollo13-contact-subject" type="text" ' . $subject_tag . ' />
 							</li>
 							<li' . ($content_error ? ' class="error"' : '') . '>
-								<label for="apollo13-contact-content">' . __( 'Message <span>(required)</span>', TPL_SLUG ) . '</label>
+								<label for="apollo13-contact-content">' . __( 'Message <span>(Obligatoire)</span>', TPL_SLUG ) . '</label>
 								<textarea id="apollo13-contact-content" name="apollo13-contact-content" rows="10" cols="40">' . $content_tag . '</textarea>
 							</li>
 							<li>
 								<input type="hidden" name="apollo13-contact-form" value="send" />
-								<input type="submit" value="' . __( 'Submit form', TPL_SLUG ) . '" />
+								<input type="submit" value="' . __( 'Envoyer', TPL_SLUG ) . '" />
 							</li>
 						</ul>
 					</form>';

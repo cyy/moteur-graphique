@@ -6,4 +6,9 @@ body{
 	
 	
 }
-
+.theme-color-light #logo a{
+	background-image: url(http://localhost/moteur-graphique/wp-content/themes/airlock/common/gfx/logo.png)
+}
+.theme-color-dark #logo a{
+	background-image: url(http://localhost/moteur-graphique/wp-content/themes/airlock/common/gfx/logo.png)
+}

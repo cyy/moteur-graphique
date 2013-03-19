@@ -39,7 +39,7 @@ get_header(); ?>
 			function apollo13_hp_get_blog(){
 				
 				/**
-				 * É¾³ýÄ¬ÈÏÄ£°æ£¬Ö»±£ÁôportfolioÄ£°æ
+				 * É¾ï¿½ï¿½Ä¬ï¿½ï¿½Ä£ï¿½æ£¬Ö»ï¿½ï¿½ï¿½ï¿½portfolioÄ£ï¿½ï¿½
 				 * 
 				 * @author cyy
 				 * 
@@ -138,10 +138,14 @@ get_header(); ?>
 						$term_slug = $hp_portfolio_category;
 						if( $apollo13->get_option( 'portfolio_options', 'show_featured' ) == 'yes' ){
 							$slug = 'featured';
-							echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . ( ($term_slug == 'featured') ? ' selected' : '' ) . '" href="' . site_url() . '?page_id=' . $portfolio_page . '">' . __( 'Featured', TPL_SLUG ) . '</a>';
+							//echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . ( ($term_slug == 'featured') ? ' selected' : '' ) . '" href="' . site_url() . '?page_id=' . $portfolio_page . '">' . __( 'Featured', TPL_SLUG ) . '</a>';
+							
+							echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . ( ($term_slug == 'featured') ? ' selected' : '' ) . '" href="' . site_url() .'">' . __( 'Top', TPL_SLUG ) . '</a>';
 							echo $separator;
 						}
-						echo '<a href="' . site_url() . '?page_id=' . $portfolio_page . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( ($term_slug == 'all') ? ' selected' : '' ) . '">' . __( 'All', TPL_SLUG ) . '</a>';
+						//echo '<a href="' . site_url() . '?page_id=' . $portfolio_page . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( ($term_slug == 'all') ? ' selected' : '' ) . '">' . __( 'All', TPL_SLUG ) . '</a>';
+						
+						echo '<a href="' . site_url() . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( ($term_slug == 'all') ? ' selected' : '' ) . '">' . __( 'Tous', TPL_SLUG ) . '</a>';
 						echo $separator;
 						foreach($terms as $term) {
 							echo '<a class="' . PORTFOLIO_PRE_CLASS . $term->slug . ( ($term_slug == $term->slug) ? ' selected' : '' ) . '" href="' . get_term_link($term) . '">' . $term->name . '</a>';

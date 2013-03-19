@@ -10,11 +10,23 @@
  */
 
 jQuery(document).ready(function($) {
+	
+	/*-----------------------------------------------------------------------------------*/
+	/*	Top
+	/*-----------------------------------------------------------------------------------*/
+	(new GoTop()).init({
+		pageWidth : 980,
+		nodeId : 'go-top',
+		nodeWidth : 50,
+		distanceToBottom : 125,
+		hideRegionHeight : 368,
+		text : 'Top'
+	});
 
 	/*-----------------------------------------------------------------------------------*/
 	/*	Like Script start
 	/*-----------------------------------------------------------------------------------*/
-function tz_reloadLikes(who) {
+	function tz_reloadLikes(who) {
 		var text = jQuery("#" + who).html();
 		var patt= /(\d)+/;
 		
@@ -57,20 +69,68 @@ function tz_reloadLikes(who) {
 	/*	infinite ajax scroll Script start
 	/*-----------------------------------------------------------------------------------*/
 	
-	//¹öÆÁ¼ÓÔØ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	jQuery.ias({
 		//Enter the selector of the element containing your items that you want to paginate.
 	    container : '#content',
 	    //Enter the selector of the element that each item has. Make sure the elements are inside the container element.
-	    item: '.portfolio-elastic',
+	    item: '.item',
 	    //The page selector of the element. This element will be hidden when IAS loads.
 	    pagination: '#posts-nav',
 	    //Next page selector of the element. This element will be hidden when IAS loads.
 	    next: '.nav-next a',
-	    //Page number after which a ¡®Load more items¡¯ link is displayed. Users will manually trigger the loading of the next page by clicking this link.
+	    //Page number after which a ï¿½ï¿½Load more itemsï¿½ï¿½ link is displayed. Users will manually trigger the loading of the next page by clicking this link.
 	    triggerPageThreshold: 100,
 	    //Load img src
-        loader: '<img src="wp-content/themes/airlock/advance/plugins/infinite-ajax-scroll/images/loader.gif"/>'
-    });
+        loader: '<img src="wp-content/themes/airlock/advance/plugins/infinite-ajax-scroll/images/loader.gif"/>',
+        
+        onLoadItems: function(items) {
+            // hide new items while they are loading
+            var $newElems = $(items).show().css({ opacity: 0 });
+            // ensure that images load before adding to masonry layout
+            $newElems.imagesLoaded(function(){
+              // show elems now they're ready
+              $newElems.animate({ opacity: 1 });
+              $('.portfolio-elastic').masonry().masonry( 'appended', $newElems, true );
+            });
+            return true;
+        }
+        
+	});
+	
+	
+
+	$.fn.smartFloat = function() {
+		var position = function(element) {
+			var top = element.position().top, pos = element
+					.css("position");
+			$(window).scroll(function() {
+				var scrolls = $(this).scrollTop();
+				if (scrolls > top) {
+					if (window.XMLHttpRequest) {
+						element.css({
+							position : "fixed",
+							top : 0
+						});
+					} else {
+						element.css({
+							top : scrolls
+						});
+					}
+				} else {
+					element.css({
+						position : "absolute",
+						top : 368
+					//è¿™é‡Œæ ¹æ®å³ä¾§æ é•¿åº¦è‡ªå®šä¹‰
+					});
+				}
+			});
+		};
+		return $(this).each(function() {
+			position($(this));
+		});
+	};
+	
+	$("#top-link").smartFloat();  
 	
 	});

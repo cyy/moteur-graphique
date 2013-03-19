@@ -286,6 +286,8 @@ jQuery(document).ready(function($) {
 	if ($('#portfolioList.dynamic').length) {
 		
 		$('#portfolioList a').click(function(event){
+			//edit by 2013-03-11
+			return true;
 			event.preventDefault();
 			$('#portfolioList a.selected').removeClass('selected');
 			items_class = $(this).attr('class');
