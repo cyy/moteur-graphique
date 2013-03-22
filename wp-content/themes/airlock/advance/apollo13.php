@@ -1700,14 +1700,14 @@ class Apollo13 {
 		?>
 	 	<div class="item-image">
 	 		<?php if( $double_link ): ?>
-	 			<span class="alpha-scope alpha-scope-double-icon"><?php echo $media_link; ?><a class="alpha-scope-more" href="<?php echo get_permalink( get_the_ID() ); ?>"></a><img src="<?php echo $src; ?>" <?php echo $attrs; ?> /></span>
+	 			<span class="alpha-scope alpha-scope-double-icon"><?php echo $media_link; ?><a class="alpha-scope-more" href="<?php echo get_permalink( get_the_ID() ); ?>" target="_blank"></a><img src="<?php echo $src; ?>" <?php echo $attrs; ?> /></span>
 	 		<?php else:
-	 			$link_to_use = '<a class="alpha-scope-more" href="' . get_permalink( get_the_ID() ) . '"><em></em></a>';
+	 			$link_to_use = '<a class="alpha-scope-more" href="' . get_permalink( get_the_ID() ) . '" target="_blank"><em></em></a>';
 	 			if( $icon_mode == 'view_photo')
 	 				$link_to_use = $media_link;
 	 			else{}
 	 		?>
-	 			<span class="alpha-scope alpha-scope-single-icon"><?php echo $link_to_use; ?><img src="<?php echo $src; ?>" <?php echo $attrs; ?> /><span class="alpha-scope-all" style="display: none;"><span class="alpha-scope-bg" style="opacity: 0.5;"></span><a class="alpha-scope-more" href="<?php echo get_permalink( get_the_ID() ); ?>"></a></span></span>
+	 			<span class="alpha-scope alpha-scope-single-icon"><?php echo $link_to_use; ?><img src="<?php echo $src; ?>" <?php echo $attrs; ?> /><span class="alpha-scope-all" style="display: none;"><span class="alpha-scope-bg" style="opacity: 0.5;"></span><a class="alpha-scope-more" href="<?php echo get_permalink( get_the_ID() ); ?>" target="_blank"></a></span></span>
 	 			<?php endif; ?>
 	 	</div>
 		<?php
