@@ -1354,6 +1354,21 @@ class Apollo13 {
 				}
 			}
 			if( isset( $meta['id'] ) && isset( $_POST[ $meta['id'] ] ) && $meta['type'] != 'adder' ){
+
+				/**
+				 * Auto Add Image's alt
+				 *
+				 * @author cyy
+				 *
+				 * $date 2013-03-22$
+				 */
+				if ($_POST['image_count'] && strpos($meta['id'], 'post_image_attr') !== FALSE) {
+				
+					if ($_POST[ $meta['id'] ] == 'alt=\"\"') {
+						$_POST[ $meta['id'] ] = 'alt=\"'. addslashes($_POST['post_title']) . '\"';
+					}
+				}
+
 				update_post_meta( $post_id, '_' . $meta['id'] , $_POST[ $meta['id'] ] );
 			}
 		}
