@@ -511,7 +511,8 @@ h1.page-title{
 }
 .elastic .post-info a.comments,
 .elastic .post-categories a{
-	color: #626262;
+	/**color: #626262;**/
+	color: #5a5a5a;
 }
 .elastic .item.hovered{
 	border-bottom-color: #323232;
@@ -780,12 +781,14 @@ div.anythingSlider-minimalist-round{
 }
 .post-info span,
 .post-categories span{
-	color: #4f4f4f;
+	/**color: #4f4f4f;**/
+	color: #5a5a5a;
 	margin: 0 10px;
 }
 .post-info a,
 .post-categories a{
-	color: #626262;
+	/**color: #626262;**/
+	color: #5a5a5a;
 }
 .post-info span.date{
 	margin: 0;
