@@ -88,7 +88,7 @@ wp_enqueue_script('ext', TPL_JS . '/ext.js', array( 'jquery' ) );
 				</div>
 				<div class="post-categories">
 					<?php $apollo13->portfolio_posted_in( $term_list ); ?>
-					<span class="fr" >par <?php echo get_the_author()?></span>
+					<span class="fr" >Par <?php echo get_the_author()?></span>
 				</div>
 			</div>
 	<!--BEGIN .entry-meta .entry-header-->

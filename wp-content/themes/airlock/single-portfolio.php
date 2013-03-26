@@ -33,7 +33,7 @@ get_header();
 				echo '<span class="categories">';
 				$apollo13->portfolio_posted_in( $term_list, ', ' );
 				echo '</span>';
-				echo '<span>|</span><span>par ' . get_the_author() . '</span>';
+				echo '<span>|</span><span>Par ' . get_the_author() . '</span>';
 				edit_post_link( __( 'Edit', TPL_SLUG ),'<span>|</span> ' );
 				$content = get_the_content(); 
 				$content = apply_filters('the_content', $content);
