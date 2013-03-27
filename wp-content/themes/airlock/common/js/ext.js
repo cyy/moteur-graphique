@@ -36,23 +36,49 @@ jQuery(document).ready(function($) {
 		jQuery("#" + who).html('<span class="count">' + text + '</span>');
 	} //reloadLikes
 	
+	/**
+	 * minus likes
+	 */
+	function tz_minusLikes(who) {
+		var text = jQuery("#" + who).html();
+		var patt= /(\d)+/;
+		
+		var num = patt.exec(text);
+		var likeNum = num[0];
+		if (likeNum > 0) {
+			--likeNum;
+		}
+		text = text.replace(patt, likeNum);
+		jQuery("#" + who).html('<span class="count">' + text + '</span>');
+	}
 	
+	//取消like，清理cookie，页面减少like数，后台不减少
 	function tz_likeInit() {
 		jQuery(".likeThis").live('click', function() {
+			
 			var classes = jQuery(this).attr("class");
 			classes = classes.split(" ");
 			
-			if(classes[1] == "active") {
-				return false;
-			}
-			var classes = jQuery(this).addClass("active");
 			var id = jQuery(this).attr("id");
 			id = id.split("like-");
+			
+			var likeStatus = classes[1] == "active";
+			
+			if(likeStatus) {
+				jQuery(this).removeClass('active');
+				tz_minusLikes("like-" + id[1]);
+			} else {
+				jQuery(this).addClass("active");
+				tz_reloadLikes("like-" + id[1]);
+			}
+			
 			jQuery.ajax({
 			  type: "POST",
 			  url: "index.php",
 			  data: "likepost=" + id[1],
-			  success: tz_reloadLikes("like-" + id[1])
+			  success: function (msg) {
+				
+			  }
 			}); 
 			
 			
@@ -134,3 +160,4 @@ jQuery(document).ready(function($) {
 	$("#top-link").smartFloat();  
 	
 	});
+
