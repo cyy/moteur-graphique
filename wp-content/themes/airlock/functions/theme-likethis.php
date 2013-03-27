@@ -3,7 +3,7 @@
 function tz_likeThis($post_id,$action = 'get') {
 
 	if(!is_numeric($post_id)) {
-		error_log("Error: Value submitted for post_id was not numeric");
+		//error_log("Error: Value submitted for post_id was not numeric");
 		return;
 	} //if
 
@@ -23,6 +23,7 @@ function tz_likeThis($post_id,$action = 'get') {
 	
 	case 'update':
 		if(isset($_COOKIE["like_" + $post_id])) {
+			setcookie("like_" + $post_id, '', -86400, '/');
 			return;
 		} //if
 		
@@ -54,7 +55,7 @@ function tz_printLikes($post_id) {
 	
 	if(isset($_COOKIE["like_" + $post_id])) {
 
-	print '<a href="#" class="likeThis active" id="like-'.$post_id.'"><span class="icon"></span><span class="count">'.$likes.'</span></a>';
+		print '<a href="#" class="likeThis active" id="like-'.$post_id.'"><span class="icon"></span><span class="count">'.$likes.'</span></a>';
 		return;
 	} //if
 
