@@ -1,6 +1,6 @@
 <?php
 
-function tz_likeThis($post_id,$action = 'get') {
+function tz_likeThis($post_id,$action = 'get', $isMinus = 0) {
 
 	if(!is_numeric($post_id)) {
 		//error_log("Error: Value submitted for post_id was not numeric");
@@ -22,10 +22,14 @@ function tz_likeThis($post_id,$action = 'get') {
 	
 	
 	case 'update':
-		if(isset($_COOKIE["like_" + $post_id])) {
-			setcookie("like_" + $post_id, '', -86400, '/');
+		
+		if(!$isMinus && isset($_COOKIE["like_" + $post_id])) {
 			return;
 		} //if
+		
+		if($isMinus) {
+			setcookie("like_" + $post_id, '', -86400, '/');
+		}
 		
 		$currentValue = get_post_meta($post_id, '_likes');
 		
@@ -34,10 +38,15 @@ function tz_likeThis($post_id,$action = 'get') {
 			add_post_meta($post_id, '_likes', '1', true);
 		} //if
 		
-		$currentValue[0]++;
+		if (!$isMinus){ 
+			$currentValue[0]++;
+			setcookie("like_" + $post_id, $post_id,time()*20, '/');
+		} else {
+			--$currentValue[0];
+		}
 		update_post_meta($post_id, '_likes', $currentValue[0]);
 		
-		setcookie("like_" + $post_id, $post_id,time()*20, '/');
+		//setcookie("like_" + $post_id + $ip, $post_id, time()*20, '/');
 	break;
 
 	} //switch
@@ -77,7 +86,8 @@ function setUpPostLikes($post_id) {
 
 function checkHeaders() {
 	if(isset($_POST["likepost"])) {
-		tz_likeThis($_POST["likepost"],'update');
+		$isMinus = $_POST['isminus'];
+		tz_likeThis($_POST["likepost"],'update', $isMinus);
 	} //if
 
 } //checkHeaders
@@ -87,6 +97,19 @@ function jsIncludes() {
 	wp_enqueue_script('jquery');
 
 } //jsIncludes
+
+function get_real_ip() {
+	if (!empty($_SERVER["HTTP_CLIENT_IP"])) {
+		$cip = $_SERVER["HTTP_CLIENT_IP"];
+	} elseif (!empty($_SERVER["HTTP_X_FORWARDED_FOR"])) {
+		$cip = $_SERVER["HTTP_X_FORWARDED_FOR"];
+	} elseif (!empty($_SERVER["REMOTE_ADDR"])) {
+		$cip = $_SERVER["REMOTE_ADDR"];
+	} else {
+		$cip = "0.0.0.0";
+	}
+	return $cip;
+}
 
 add_action ('publish_post', 'setUpPostLikes');
 add_action ('init', 'checkHeaders');
