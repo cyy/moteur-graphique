@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 		pageWidth : 980,
 		nodeId : 'go-top',
 		nodeWidth : 50,
-		distanceToBottom : 125,
+		distanceToBottom : 225,
 		hideRegionHeight : 368,
 		text : 'Top'
 	});
@@ -64,9 +64,12 @@ jQuery(document).ready(function($) {
 			
 			var likeStatus = classes[1] == "active";
 			
+			var isminus = 0;
+			
 			if(likeStatus) {
 				jQuery(this).removeClass('active');
 				tz_minusLikes("like-" + id[1]);
+				isminus = 1;
 			} else {
 				jQuery(this).addClass("active");
 				tz_reloadLikes("like-" + id[1]);
@@ -75,7 +78,7 @@ jQuery(document).ready(function($) {
 			jQuery.ajax({
 			  type: "POST",
 			  url: "index.php",
-			  data: "likepost=" + id[1],
+			  data: {"likepost": id[1], 'isminus' : isminus},
 			  success: function (msg) {
 				
 			  }
@@ -118,7 +121,10 @@ jQuery(document).ready(function($) {
               // show elems now they're ready
               $newElems.animate({ opacity: 1 });
               $('.portfolio-elastic').masonry().masonry( 'appended', $newElems, true );
+              //jQuery("img").lazyload({event: "scrollstop"});
+              jQuery("img").lazyload();
             });
+            
             return true;
         }
         
@@ -157,7 +163,12 @@ jQuery(document).ready(function($) {
 		});
 	};
 	
-	$("#top-link").smartFloat();  
+	jQuery("#top-link").smartFloat();  
 	
+	jQuery("#J_layer_close").click(function() {
+		jQuery('.J_layer_div').hide();
 	});
-
+	
+	jQuery("img").lazyload({event: "scrollstop"});
+	    
+});

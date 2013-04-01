@@ -12,6 +12,8 @@ global $apollo13;
 //<script type="text/javascript" src="img/jquery.isotope.min.js"></script>
 wp_enqueue_script('jquery.isotope', TPL_JS . '/jquery.isotope.js', array( 'jquery' ) );
 wp_enqueue_script('go-top', TPL_JS . '/go-top.js', array( 'jquery' ) );
+//wp_enqueue_script('jquery.scrollstop', TPL_JS . '/jquery.scrollstop.js', array( 'jquery' ) );
+wp_enqueue_script('jquery.lazyload.min', TPL_JS . '/jquery.lazyload.min.js', array( 'jquery' ) );
 wp_enqueue_script('ext', TPL_JS . '/ext.js', array( 'jquery' ) );
 
 ?>
@@ -73,7 +75,7 @@ wp_enqueue_script('ext', TPL_JS . '/ext.js', array( 'jquery' ) );
 		<div id="post-<?php the_ID(); ?>" class="item<?php echo $item_classes ?>"<?php echo $style; ?>>
 			<?php
 				$item_height = $apollo13->get_option( 'thumbs_options', 'portfolio_thumb' );
-				$apollo13->portfolio_top_image_video( 220, $item_height ); 
+				$apollo13->portfolio_top_image_video( 220, $item_height, false, true); 
 			?> 
 			<?php 
 				if( defined( 'ORG_IS_FRONT_PAGE' ) && ORG_IS_FRONT_PAGE && $only_images ):
