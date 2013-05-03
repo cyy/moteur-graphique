@@ -3,6 +3,39 @@
 ?>
 			<div class="cleared"></div>
 		</div><!-- #mid -->
+		<?php 
+		$request_page = str_replace(home_url( '/' ), '', $_SERVER['REQUEST_URI']);
+		if ($request_page == '/' || $request_page == '/index.php'){?>
+		<div class="layer_fix J_layer_div" style="display: block;">
+		    <div style="display: block;" class="layer_con">
+		        <div style="margin:27px 10px 8px 0;" class="layer_text">
+		              <div style="height: 59px;">
+		              
+		              </div>
+		        </div>
+		         
+		        <div class="layer_btn_div">
+			        <div class="layer_big">
+			            <input type="button" class="layer_pinterest" value="pinterest" />
+			        </div>
+			        <div class="layer_big">
+			            <input type="button" class="layer_facebook" value="facebook" />
+			        </div>
+			        <div class="layer_big">
+			            <input type="button" class="layer_twitter" value="twitter" />
+			        </div>
+			        <div class="layer_big">
+			            <input type="button" class="layer_google" value="google" />
+			        </div>
+		        </div>
+		      	<div class="layer_par"></div>
+		        <div class="clear"></div>
+		    </div>
+		    <div class="layer_close" data-bn-ipg="rl-close">
+		        <a onfocus="this.blur();" href="javascript:void(0)" id="J_layer_close">Close</a>
+		    </div>
+	    </div>
+		<?php }?>
         <?php
         	$hp_foot = $apollo13->get_option( 'design_options', 'hp_footer_switch' );
         	$normal_foot = $apollo13->get_option( 'settings', 'theme_footer_switcher' );

@@ -224,9 +224,9 @@ function edit_post( $post_data = null ) {
 	}
 
 	add_meta( $post_ID );
-
+	
 	update_post_meta( $post_ID, '_edit_last', $GLOBALS['current_user']->ID );
-
+	
 	wp_update_post( $post_data );
 
 	// Now that we have an ID we can fix any attachment anchor hrefs

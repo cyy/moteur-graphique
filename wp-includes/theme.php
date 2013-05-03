@@ -747,7 +747,7 @@ function get_query_template( $type, $templates = array() ) {
 
 	if ( empty( $templates ) )
 		$templates = array("{$type}.php");
-
+	
 	return apply_filters( "{$type}_template", locate_template( $templates ) );
 }
 

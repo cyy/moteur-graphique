@@ -26,7 +26,7 @@ get_header(); ?>
 <?php if ( is_author() ) : ?>
 				<?php printf( __( 'Author Archives: %s',  TPL_SLUG  ), "<span class='vcard'><a class='url fn n' href='" . get_author_posts_url( get_the_author_meta( 'ID' ) ) . "' title='" . esc_attr( get_the_author() ) . "' rel='me'>" . get_the_author() . "</a></span>" ); ?>
 <?php elseif ( is_category() ) : ?>
-				<?php printf( __( 'Category Archives: %s',  TPL_SLUG  ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
+				<?php //printf( __( 'Category Archives: %s',  TPL_SLUG  ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
 <?php elseif ( is_day() ) : ?>
 				<?php printf( __( 'Daily Archives: <span>%s</span>', TPL_SLUG ), get_the_date() ); ?>
 <?php elseif ( is_month() ) : ?>
@@ -38,7 +38,8 @@ get_header(); ?>
 <?php endif; ?>
 				</h1>
 		
-		<div class="posts-elastic elastic">
+		<!-- <div class="posts-elastic elastic">  -->
+		<div class="portfolio-elastic elastic">
 
 			<?php 
 			/* Since we called the_post() above, we need to

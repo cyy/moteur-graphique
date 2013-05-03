@@ -38,15 +38,6 @@ get_header(); ?>
 		<?php
 			function apollo13_hp_get_blog(){
 				
-				/**
-				 * ɾ��Ĭ��ģ�棬ֻ����portfolioģ��
-				 * 
-				 * @author cyy
-				 * 
-				 * $date 2013-02-25
-				 */
-				//return false;
-				
 				global $wp_query, $apollo13;
 				global $more;    // Declare global $more (before the loop).
                 $more = 0;  
@@ -80,7 +71,9 @@ get_header(); ?>
 				if( strlen( $hp_blog_title ))
 					echo '<h4 class="hp-blog-title">' . $hp_blog_title . '</h4>';
 				echo '<div class="posts-elastic elastic">';
+				//echo '<div class="portfolio-elastic elastic">';
 					get_template_part( 'loop' );
+					//get_template_part( 'loop', 'portfolio' );
 				echo '</div>';
 				
 				$wp_query = $original_query;
@@ -118,10 +111,17 @@ get_header(); ?>
 					'post_type'           => PORTFOLIO_POST_TYPE,
 					'post_status'         => 'publish',
 					'ignore_sticky_posts' => true,
-//					'orderby'             => 'epo_custom'
+					//'meta_key'			  => '_likes',
+					//'orderby'             => 'meta_value'
 				);
+				
 				if( ! in_array( $hp_portfolio_category, array('all','featured') ) ){
 					$args['skills'] = $hp_portfolio_category;//give portfolios from selected category
+				}
+				
+				if ($_GET['top']) {
+					$args['meta_key'] = '_likes';
+					$args['orderby'] = 'meta_value_num';
 				}
 				
 				$wp_query = new WP_Query( $args );
@@ -140,12 +140,12 @@ get_header(); ?>
 							$slug = 'featured';
 							//echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . ( ($term_slug == 'featured') ? ' selected' : '' ) . '" href="' . site_url() . '?page_id=' . $portfolio_page . '">' . __( 'Featured', TPL_SLUG ) . '</a>';
 							
-							echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . ( ($term_slug == 'featured') ? ' selected' : '' ) . '" href="' . site_url() .'">' . __( 'Top', TPL_SLUG ) . '</a>';
+							echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . ( ($term_slug == 'featured' || $_GET['top']) ? ' selected' : '' ) . '" href="' . site_url() .'?top=like">' . __( 'Top', TPL_SLUG ) . '</a>';
 							echo $separator;
 						}
 						//echo '<a href="' . site_url() . '?page_id=' . $portfolio_page . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( ($term_slug == 'all') ? ' selected' : '' ) . '">' . __( 'All', TPL_SLUG ) . '</a>';
 						
-						echo '<a href="' . site_url() . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( ($term_slug == 'all') ? ' selected' : '' ) . '">' . __( 'Tous', TPL_SLUG ) . '</a>';
+						echo '<a href="' . site_url() . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( ($term_slug == 'all' && !$_GET['top']) ? ' selected' : '' ) . '">' . __( 'Tous', TPL_SLUG ) . '</a>';
 						echo $separator;
 						foreach($terms as $term) {
 							echo '<a class="' . PORTFOLIO_PRE_CLASS . $term->slug . ( ($term_slug == $term->slug) ? ' selected' : '' ) . '" href="' . get_term_link($term) . '">' . $term->name . '</a>';

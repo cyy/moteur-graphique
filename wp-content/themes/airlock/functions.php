@@ -10,6 +10,7 @@ if(!function_exists('lets_play_apollo_game')) {
 	}
 }
 
+remove_action('template_redirect', 'redirect_canonical');
 lets_play_apollo_game();
 
 	

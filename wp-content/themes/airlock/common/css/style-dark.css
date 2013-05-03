@@ -227,9 +227,10 @@ h5{
 	padding: 0;
 }
 #logo{
-	height: 160px;
-	width: 200px;
 	float: left;
+    height: 72px;
+    margin: 5px 0 0 88px;
+    width: 139px;
 }
 #logo a{
 	height: 100%;
@@ -239,12 +240,14 @@ h5{
 	text-indent: -9999px;
 }
 #header{
-	height: 160px;
-	position: relative;
-	z-index: 1000;
+	background: url("../gfx/dark-new/mg-head_08.png") repeat scroll 0 0 transparent;
+    height: 80px;
+    position: relative;
+    z-index: 1000;
 }
 #header #menu{
 	float: left;
+	margin: 5px 0 0;
 }
 #header .menu{
 	float: left;
@@ -356,13 +359,13 @@ h5{
 }
 #header .search-form{
 	float: right;
-	padding: 63px 0 0;
+	padding: 20px 0 0;
 }
 #header .search-form .search-left{
 	float: left;
 	width: 16px;
-	height: 32px;
-	background: url(../gfx/dark/search-left.png) 0 0 no-repeat;
+	height: 35px;
+	background: url(../gfx/dark-new/search-bg.png) 0 0 no-repeat;
 	position: relative;
 }
 #header .search-form .search-left label{
@@ -372,12 +375,14 @@ h5{
 	width: 32px;
 	height: 32px;
 	background: url(../gfx/dark/search-label.png) 50% 50% no-repeat;
+	margin-top: 1px;
 }
 #header .search-form .search-right{
 	float: left;
-	height: 32px;
-	background: url(../gfx/dark/search-right.png) 100% 0 no-repeat;
+	height: 35px;
+	background: url(../gfx/dark-new/search-bg.png) 100% 0 no-repeat;
 	padding: 0 16px 0 0;
+	padding-left: 10px;
 }
 #header .search-form .search-right div{
 	height: 32px;
@@ -396,7 +401,7 @@ h5{
 #header .search-form input[type="submit"]{
 	display: none;
 }
-#header .search-form .close{
+#header .search-form .close_del{
 	float: right;
 	height: 32px;
 	width: 9px;
@@ -858,7 +863,8 @@ div.anythingSlider-minimalist-round{
 	color: #999;
 }
 #portfolioList a.selected{
-	color: #cacaca;
+	color: #ECB618;
+	/**background:url(../gfx/dark-new/mg-tag-bg.png) no-repeat;**/
 }
 #portfolioList span{
 	color: #494949;
@@ -1011,12 +1017,12 @@ form.styled-form input[type="submit"]:hover{
 
 .contact-page{
 	background-color: #fff;
-	width: 580px;
+	width: 780px;
 	padding: 37px 30px;
 	border-bottom: 1px solid #DBDBDB;
 }
 .contact-page .text{
-	width: 260px;
+	width: 460px;
 	float: left;
 	margin-left: 60px;
 }
@@ -1052,7 +1058,7 @@ a.sc-image{
 	border: none;
 }
 .alpha-scope-all{
-	z-index: 1000;
+	/**z-index: 1000;**/
 }
 .alpha-scope-all,
 .alpha-scope-bg,

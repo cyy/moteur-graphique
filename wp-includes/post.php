@@ -2426,7 +2426,7 @@ function wp_insert_post($postarr, $wp_error = false) {
 	unset( $postarr[ 'filter' ] );
 
 	$postarr = sanitize_post($postarr, 'db');
-
+	
 	/**
 	 * Random author：post_author rand(min, max)
 	 *
@@ -2713,10 +2713,10 @@ function wp_update_post($postarr = array()) {
 		$postarr['post_date'] = current_time('mysql');
 		$postarr['post_date_gmt'] = '';
 	}
-
+	
 	if ($postarr['post_type'] == 'attachment')
 		return wp_insert_attachment($postarr);
-
+	
 	return wp_insert_post($postarr);
 }
 

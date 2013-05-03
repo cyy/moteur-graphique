@@ -28,8 +28,7 @@
 <meta name="author" content="Apollo13 Team" />
 
 <!-- Fav Icon -->
-<link rel="shortcut icon" href="<?php echo TPL_GFX;?>/icon.png" />
-
+<link rel="shortcut icon" href="/favicon.ico" />
 <script type='text/javascript'>
 /* <![CDATA[ */
 var social_skins = {
@@ -38,6 +37,14 @@ var social_skins = {
 };
 /* ]]> */
 </script>
+<?php 
+	remove_action('wp_head', 'wp_print_scripts');
+	remove_action('wp_head', 'wp_print_head_scripts', 9);
+	remove_action('wp_head', 'wp_enqueue_scripts', 1);
+	add_action('wp_footer', 'wp_print_scripts', 5);
+	add_action('wp_footer', 'wp_enqueue_scripts', 5);
+	add_action('wp_footer', 'wp_print_head_scripts', 5);
+?>
 <?php wp_head(); ?>
 </head>
 
@@ -47,18 +54,19 @@ var social_skins = {
 		<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', TPL_SLUG ); ?>"><?php _e( 'Skip to content', 'twentyten' ); ?></a></div>
 	</div><!-- #access -->
 
-	<?php 
+	<?php
 		global $apollo13;
 		$layout_width = $apollo13->get_option( 'settings', 'layout_width' );
+		wp_enqueue_script('thickbox');
+		wp_enqueue_style('thickbox');
 	?>
-	<div id="root"<?php echo ($layout_width == '960')? ' class="narrow"' : ''; ?>>
-		<div id="header">
+	
+	<div id="header">
 			<div id="logo"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"></a></div>
-				
+			 
 			<div id="menu">
-				<?php 
-					if ( has_nav_menu( 'header-menu' ) ): 
-				/* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */
+				<?php
+					/**if ( has_nav_menu( 'header-menu' ) ): 
 						wp_nav_menu( array( 
 							'container'       => false,
 							'link_before'     => '<span>',
@@ -71,10 +79,22 @@ var social_skins = {
 							'link_before'     => '<span>',
 							'link_after'      => '</span>' ) 
 						);
-					endif;
+					endif;**/
 				 ?>
+				 <ul>
+				 	<li id="menu_formation<?php if ($_SERVER['REQUEST_URI'] == '/formation/' || $wp_query->is_category){echo '_active';}?>">
+				 		<a href="<?php echo home_url( '/' ); ?>formation/ecole-de-design/" title="Formation">Formation</a>
+				 	</li>
+				 	<li class="menu_li"></li>
+				 	<li class="menu_li"></li>
+				 	<li class="menu_li"></li>
+				 	<li id="menu_contact<?php if ($_SERVER['REQUEST_URI'] == '/contact/'){echo '_active';}?>">
+				 		<a href="<?php echo home_url( '/' ); ?>contact" title="Contact">Contact</a>
+				 	</li>
+				 	<li class="menu_search_form"> <?php get_search_form(); ?></li>
+				 </ul>
 			</div>
-			
+			<div style="clear: left;"></div>
 			<?php 
 				if( $apollo13->get_option( 'settings', 'theme_switcher' ) == 'on' ){
 					$detect = '';
@@ -83,8 +103,6 @@ var social_skins = {
 					echo '<span id="night-toggle"' . $detect . '><span class="norm"></span><span class="hov"></span></span>';
 				}
 			?>
-			
-			<?php get_search_form(); ?>
 			
 			<?php 
 			$social_width = 39 * $apollo13->get_option( 'social_options', 'social_number_of_visible' ); 
@@ -102,6 +120,100 @@ var social_skins = {
 				</div>
 			</div>
 		</div>
+	<div id="sub_menu">
+		<div id="menu_cafe">
+			<div class="cafe_content">
+				<p>“Si le site HD vous a été utile et que vous êtes satisfaits de notre contenu, vous pouvez toujours nous inviter à boire un café. :) “</p>
+				<p>Merci</p>
+				<p class="equipe_p">L‘équipe HD</p>
+			</div>
+			<div class="cafe_form">
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="_xclick" id="J_cafe_form">
+				<input type="hidden" name="cmd" value="_xclick" />
+				<input type="hidden" name="business" value="omgdevil@gmail.com" />
+				<input type="hidden" name="item_name" value="Un cafe pour Hello,Devil" />
+				<input type="hidden" name="currency_code" value="EUR" />
+				<div class="cafe_form_img">
+					<a href="javascript:void(0);" id="J_buycafe">Cafe</a>
+				</div>
+				<div class="cafe_form_num">
+					<select name="amount">
+						<option value="1.5">Café 1.50 €
+						<option value="3">Frozen café au lait 3.00 €
+						<option value="5">Le dessert avec un bon café 5.00 €
+					</select>
+				</div>
+				</form>
+			</div>
+		</div>
+		<div class="sub_menu_cat"></div>
+		<div id="menu_sign">
+			<div class="fl">
+				<p>Bonjour visiteur ! </p>
+				<p>Il me semble que vous êtes nouveau ici. Si vous souhaitez participer à HD, cliquez sur un de ces boutons.</p>
+			</div>
+			<div class="sign_div">
+					<a href="#" class="login_btn" id="J-login">login</a>
+					<a href="#" class="reg_btn" id="J-register">register</a>
+			</div>
+			<div style="display: none;" id="loginDiv">
+				<div class="sns_div">
+					<div class="sns_big">
+			            <input type="button" class="sns_pinterest" value="pinterest" />
+			        </div>
+			        <div class="sns_big">
+			            <input type="button" class="sns_facebook" value="facebook" />
+			        </div>
+			        <div class="sns_big">
+			            <input type="button" class="sns_twitter" value="twitter" />
+			        </div>
+			        <div class="sns_big">
+			            <input type="button" class="sns_google" value="google" />
+			        </div>
+				</div>
+				<div class="login_ou">OU</div>
+				<div class="login_input">
+					<ul>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="login_btn">
+					<div class="login_submit"></div>
+				</div>
+			</div>
+			
+			<div style="display: none;" id="registerDiv">
+				<div class="sns_div">
+					<div class="sns_big">
+			            <input type="button" class="sns_pinterest" value="pinterest" />
+			        </div>
+			        <div class="sns_big">
+			            <input type="button" class="sns_facebook" value="facebook" />
+			        </div>
+			        <div class="sns_big">
+			            <input type="button" class="sns_twitter" value="twitter" />
+			        </div>
+			        <div class="sns_big">
+			            <input type="button" class="sns_google" value="google" />
+			        </div>
+				</div>
+				<div class="login_ou">OU</div>
+				<div class="login_input">
+					<ul>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="login_btn">
+					<div class="login_submit"></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div style="clear: left;"></div>
+	<div id="root"<?php echo ($layout_width == '960')? ' class="narrow"' : ''; ?>>
 		
 		<?php
 			$mid_class = '';

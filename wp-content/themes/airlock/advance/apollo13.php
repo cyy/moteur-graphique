@@ -597,6 +597,7 @@ class Apollo13 {
 	
 	function admin_head(){
 		/*** UPLOAD ***/
+		
 		wp_enqueue_script('media-upload');
 		wp_enqueue_script('thickbox');
 		wp_enqueue_style('thickbox');
@@ -635,7 +636,8 @@ class Apollo13 {
 			wp_enqueue_script( 'comment-reply' );
 		
 		wp_enqueue_script('jquery');
-		wp_enqueue_script('jquery-ui-apollo13', TPL_JS . '/jquery-ui.min.js', array( 'jquery' ), '1.8.12' );
+		//wp_enqueue_script('jquery-ui-apollo13', TPL_JS . '/jquery-ui.min.js', array( 'jquery' ), '1.8.12' );
+		wp_enqueue_script('jquery-ui-apollo13', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js', array( 'jquery' ), '1.8.18' );
 		
 		$apollo_params = array(
 			'cufon' => 'off',
@@ -673,7 +675,7 @@ class Apollo13 {
 		wp_enqueue_script('modernizr-transitions', TPL_JS . '/modernizr-transitions.js', array( 'jquery' ), '1.7' );
 		wp_enqueue_script('jquery-imagesloaded', TPL_JS . '/jquery.imagesloaded.js', array( 'jquery' ), '1.0.4' );
 		wp_enqueue_script('box-maker', TPL_JS . '/box-maker.js', array( 'jquery' ), '2.0.11' );
-		wp_enqueue_script('grayscale', TPL_JS . '/grayscale.js', array( 'jquery' ) );
+		//wp_enqueue_script('grayscale', TPL_JS . '/grayscale.js', array( 'jquery' ) );
 		
 		// ANYTHING SLIDER
 		wp_enqueue_script('jquery.anythingslider', TPL_JS . '/jquery.anythingslider.min.js', array( 'jquery' ), '1.7.16' );
@@ -869,9 +871,9 @@ class Apollo13 {
 		$field_search = '';
 		$helper_search = get_search_query() == '' ? true : false; 
 		$field_search = '<input ' .
-						' class="placeholder" title="' . __( 'Type and enter ...', TPL_SLUG ) . '" ' .
+						' class="placeholder" title="' . __( 'Rechercher ...', TPL_SLUG ) . '" ' .
 						'type="text" name="s" id="s' . $search_id . '" value="' . 
-						( $helper_search ? __( 'Type and enter ...', TPL_SLUG ) : get_search_query() ) . 
+						( $helper_search ? __( 'Rechercher ...', TPL_SLUG ) : get_search_query() ) . 
 						'" />';
 	
 		$form = '
@@ -1656,7 +1658,7 @@ class Apollo13 {
 		}
 	}
 	
-	function portfolio_top_image_video( $width = 220, $height = 220, $sidebar = false  ){
+	function portfolio_top_image_video( $width = 220, $height = 220, $sidebar = false , $lazyload = false ){
 		if( $sidebar ){
 			$thumb = get_post_meta(get_the_ID(), '_sidebar_thumb', true);
 			$src = TPL_GFX . '/' . TPL_COLOR . '/photo_small.jpg';
@@ -1715,14 +1717,29 @@ class Apollo13 {
 		?>
 	 	<div class="item-image">
 	 		<?php if( $double_link ): ?>
-	 			<span class="alpha-scope alpha-scope-double-icon"><?php echo $media_link; ?><a class="alpha-scope-more" href="<?php echo get_permalink( get_the_ID() ); ?>" target="_blank"></a><img src="<?php echo $src; ?>" <?php echo $attrs; ?> /></span>
+	 			<span class="alpha-scope alpha-scope-double-icon">
+	 			<?php echo $media_link; ?>
+	 			<a class="alpha-scope-more" href="<?php echo get_permalink( get_the_ID() ); ?>" target="_blank"></a>
+	 			<?php if ($lazyload) { ?>
+	 				<img src="/wp-content/themes/airlock/common/gfx/grey.gif" data-original="<?php echo $src; ?>" width="<?php echo $width;?>" height="<?php echo $height;?>" <?php echo $attrs; ?> />
+	 			<?php } else {?>
+	 				<img src="<?php echo $src; ?>" <?php echo $attrs; ?> />
+	 			<?php }?>
+	 			</span>
 	 		<?php else:
 	 			$link_to_use = '<a class="alpha-scope-more" href="' . get_permalink( get_the_ID() ) . '" target="_blank"><em></em></a>';
 	 			if( $icon_mode == 'view_photo')
 	 				$link_to_use = $media_link;
 	 			else{}
 	 		?>
-	 			<span class="alpha-scope alpha-scope-single-icon"><?php echo $link_to_use; ?><img src="<?php echo $src; ?>" <?php echo $attrs; ?> /><span class="alpha-scope-all" style="display: none;"><span class="alpha-scope-bg" style="opacity: 0.5;"></span><a class="alpha-scope-more" href="<?php echo get_permalink( get_the_ID() ); ?>" target="_blank"></a></span></span>
+	 			<span class="alpha-scope alpha-scope-single-icon">
+	 			<?php echo $link_to_use; ?>
+	 			<?php if ($lazyload) { ?>
+	 				<img src="/wp-content/themes/airlock/common/gfx/grey.gif" data-original="<?php echo $src; ?>" width="<?php echo $width;?>" height="<?php echo $height;?>" <?php echo $attrs; ?> />
+	 			<?php } else {?>
+	 				<img src="<?php echo $src; ?>" <?php echo $attrs; ?> />
+	 			<?php }?>
+	 			<span class="alpha-scope-all" style="display: none;"><span class="alpha-scope-bg" style="opacity: 0.5;"></span><a class="alpha-scope-more" href="<?php echo get_permalink( get_the_ID() ); ?>" target="_blank"></a></span></span>
 	 			<?php endif; ?>
 	 	</div>
 		<?php

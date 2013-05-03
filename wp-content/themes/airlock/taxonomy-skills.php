@@ -63,7 +63,7 @@ get_header(); ?>
 					$slug = 'featured';
 					//echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . '" href="' . site_url() . '?page_id=' . $portfolio_page . '">' . __( 'Featured', TPL_SLUG ) . '</a>';
 					
-					echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . '" href="' . site_url() . '">' . __( 'Top', TPL_SLUG ) . '</a>';
+					echo '<a class="' . PORTFOLIO_PRE_CLASS . $slug . '" href="' . site_url() . '?top=like">' . __( 'Top', TPL_SLUG ) . '</a>';
 					echo $separator;
 				}
 				//echo '<a href="' . site_url() . '?page_id=' . $portfolio_page . '" class="' . PORTFOLIO_PRE_CLASS . 'all' . ( empty( $term_slug ) ? ' selected' : '' ) . '">' . __( 'All', TPL_SLUG ) . '</a>';

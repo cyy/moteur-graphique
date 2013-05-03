@@ -80,7 +80,7 @@ function login_header($title = 'Log In', $message = '', $wp_error = '') {
 </head>
 <body class="login">
 <?php   if ( !is_multisite() ) { ?>
-<div id="login"><h1><a href="<?php echo esc_url( apply_filters('login_headerurl', 'http://wordpress.org/') ); ?>" title="<?php echo esc_attr( apply_filters('login_headertitle', __( 'Powered by WordPress' ) ) ); ?>"><?php bloginfo('name'); ?></a></h1>
+<div id="login"><h1><a href="<?php echo esc_url( apply_filters('login_headerurl', home_url( '/' )) ); ?>" title="<?php echo esc_attr( apply_filters('login_headertitle', __( '' ) ) ); ?>"><?php bloginfo('name'); ?></a></h1>
 <?php   } else { ?>
 <div id="login"><h1><a href="<?php echo esc_url( apply_filters('login_headerurl', network_home_url() ) ); ?>" title="<?php echo esc_attr( apply_filters('login_headertitle', $current_site->site_name ) ); ?>"><span class="hide"><?php bloginfo('name'); ?></span></a></h1>
 <?php   }

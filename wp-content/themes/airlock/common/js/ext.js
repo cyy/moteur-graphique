@@ -111,7 +111,7 @@ jQuery(document).ready(function($) {
 	    //Page number after which a ��Load more items�� link is displayed. Users will manually trigger the loading of the next page by clicking this link.
 	    triggerPageThreshold: 100,
 	    //Load img src
-        loader: '<img src="wp-content/themes/airlock/advance/plugins/infinite-ajax-scroll/images/loader.gif"/>',
+        loader: '<img src="/wp-content/themes/airlock/advance/plugins/infinite-ajax-scroll/images/loader.gif"/>',
         
         onLoadItems: function(items) {
             // hide new items while they are loading
@@ -163,12 +163,36 @@ jQuery(document).ready(function($) {
 		});
 	};
 	
+	//top
 	jQuery("#top-link").smartFloat();  
 	
+	//layer close
 	jQuery("#J_layer_close").click(function() {
 		jQuery('.J_layer_div').hide();
 	});
 	
-	jQuery("img").lazyload({event: "scrollstop"});
-	    
+	//img lazyload
+	jQuery("#content img").lazyload();
+	
+	//cafe paypal
+	jQuery("#J_buycafe").live('click', function() {
+		
+		jQuery("#J_cafe_form").submit();
+		
+		return false;
+	});
+	
+	//index login
+	jQuery('#J-login').live('click', function(){
+		console.log('login');
+		tb_show('login', '#TB_inline?height=300&width=400&inlineId=loginDiv');
+		return false;
+	});
+	
+	//index register
+	jQuery('#J-register').live('click', function(){
+		console.log('reg');
+		return false;
+	});
+	
 });

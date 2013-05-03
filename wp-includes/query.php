@@ -2318,7 +2318,7 @@ class WP_Query {
 		}
 
 		$where .= $search . $whichauthor . $whichmimetype;
-
+		//if ($q['orderby']=='meta_value'){$where .= " AND $wpdb->postmeta.meta_key='_likes'";}
 		if ( empty($q['order']) || ((strtoupper($q['order']) != 'ASC') && (strtoupper($q['order']) != 'DESC')) )
 			$q['order'] = 'DESC';
 
@@ -2580,7 +2580,7 @@ class WP_Query {
 			foreach ( $pieces as $piece )
 				$$piece = isset( $clauses[ $piece ] ) ? $clauses[ $piece ] : '';
 		}
-
+		//var_dump($where);
 		// Announce current selection parameters.  For use by caching plugins.
 		do_action( 'posts_selection', $where . $groupby . $orderby . $limits . $join );
 

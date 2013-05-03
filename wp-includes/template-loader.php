@@ -36,6 +36,10 @@ if ( defined('WP_USE_THEMES') && WP_USE_THEMES ) :
 	elseif ( is_archive()        && $template = get_archive_template()        ) :
 	elseif ( is_comments_popup() && $template = get_comments_popup_template() ) :
 	elseif ( is_paged()          && $template = get_paged_template()          ) :
+	elseif ($wp_query->query_vars['name']=='formation') :
+	//array ( 0 => 'category-ecole-de-design.php', 1 => 'category-5.php', 2 => 'category.php', );
+	//$template=apply_filters( "{$type}_template", locate_template( array ('archive.php') ) );
+	//$template = 'D:\\workspace\\moteur-graphique/wp-content/themes/airlock/archive.php';
 	else :
 		$template = get_index_template();
 	endif;

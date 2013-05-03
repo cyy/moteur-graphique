@@ -75,7 +75,7 @@ jQuery(document).ready(function($) {
 	}
 	
 	/******* SEARCH *********/
-	$('form.search-form .search-right div').hide();
+	/**$('form.search-form .search-right div').hide();
 	
 	$('form.search-form label').click(function(){
 		$('form.search-form').addClass('active');
@@ -98,7 +98,7 @@ jQuery(document).ready(function($) {
 			paddingRight: '16'
 		},100, 'swing');
 	});
-	
+	**/
 	/******* PLACEHOLDERS *********/
 	if ($('input.placeholder').length) {
 		$('input.placeholder').focus(function(){

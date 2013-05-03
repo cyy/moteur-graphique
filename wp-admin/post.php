@@ -71,7 +71,7 @@ function redirect_post($post_id = '') {
 	} else {
 		$location = add_query_arg( 'message', 4, get_edit_post_link( $post_id, 'url' ) );
 	}
-
+	
 	wp_redirect( apply_filters( 'redirect_post_location', $location, $post_id ) );
 	exit;
 }
@@ -191,9 +191,9 @@ case 'editattachment':
 
 case 'editpost':
 	check_admin_referer('update-' . $post_type . '_' . $post_id);
-
+	
 	$post_id = edit_post();
-
+	
 	redirect_post($post_id); // Send user on their way while we keep working
 
 	exit();

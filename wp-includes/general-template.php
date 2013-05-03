@@ -163,7 +163,7 @@ function get_search_form($echo = true) {
 	<input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" />
 	</div>
 	</form>';
-
+	
 	if ( $echo )
 		echo apply_filters('get_search_form', $form);
 	else

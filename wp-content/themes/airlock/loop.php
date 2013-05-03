@@ -48,13 +48,15 @@ global $apollo13;
 				</div>
 			</div>
 			
-	<!--BEGIN .entry-meta .entry-header-->
+   <!--BEGIN .entry-meta .entry-header-->
+	<div class="entry-div">
     <ul class="entry-meta entry-header clearfix">
              
     <li class="published">
         <a href="<?php the_permalink(); ?>" title="<?php _e('Permalink to:', 'framework');?> <?php the_title(); ?>">
             <span class="icon"></span>
-            <?php echo human_time_diff(get_the_time('U'), current_time('timestamp')) .' '. __('ago', 'framework'); ?>
+            <?php //echo human_time_diff(get_the_time('U'), current_time('timestamp')) .' '. __('ago', 'framework'); ?>
+            <?php echo 'Il ya'.' '.human_time_diff(get_the_time('U'), current_time('timestamp')); ?>
         </a>
     </li>
              
@@ -73,12 +75,10 @@ global $apollo13;
         <?php tz_printLikes(get_the_ID()); ?>
     </li>
     <?php endif; ?>
-             
-    <?php //edit_post_link( __('[Edit]', 'framework'), '<li class="edit-post">', '</li>' ); ?>
-             
     <!--END .entry-meta entry-header -->
     </ul>
-    
+    </div>
+   
 		</div><!-- #post-## -->
 
 <?php endwhile; // End the loop. Whew. ?>
